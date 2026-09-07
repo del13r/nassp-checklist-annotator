@@ -4,9 +4,9 @@ Flightplan | 317R (Range) -> 317R (Range) - LM to CSM Range (R) (Computed) (.1 n
 Flightplan | 277R (Theta) -> 277R (Theta) - Angle Between Local Horizon and Z body Axls (.01°)
 Flightplan | 232+00600 -> 232+00600 - Orbit Insertion Altitude (100 ft)
 Flightplan | 233+00250 -> 233+00250 - Vertical Pitch Steering Altitude Threshold (100 ft)
-Flightplan | 404R -> 404R - ?VX (Use 470 For Readout) (Octal)
-Flightplan | 405R -> 405R - ?VY (Use 471 For Readout) (Octal)
-Flightplan | 406R -> 406R - ?VZ (Use 472 For Readout) (Octal)
+Flightplan | 404R -> 404R - dVX (Use 470 For Readout) (Octal)
+Flightplan | 405R -> 405R - dVY (Use 471 For Readout) (Octal)
+Flightplan | 406R -> 406R - dVZ (Use 472 For Readout) (Octal)
 Flightplan | 464+00500 -> 464+00500 - Vertical Pitch Steering, Attitude Rate Threshold (.1fps)
 Flightplan | 465+00195 -> 465+00195 - Target Radial Rate at Insertion (.1fps)
 Flightplan | 616+0 -> 616+0 - Ullage counter value for ullage completion (2 sec)
@@ -24,29 +24,29 @@ Flightplan | 400+2 -> 400+2 - Z-Body Axis Steering
 Flightplan | 507+0 -> 507+0 - Z Body Points in Direction of CSM when in Z-Body Axis Steering (400 set to +20000)
 Flightplan | 400+0 -> 400+0 - Attitude Hold
 Flightplan | 410+0 -> 410+0 - Orbit Insertion Routine
-Flightplan | 407+0 -> 407+0 - Use Rotating External ?V Reference Frame
+Flightplan | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
 Flightplan | 400+2 -> 400+2 - Z-Body Axis Steering
 Flightplan | 400+0 -> 400+0 - Attitude Hold
-Undocking | 404+00000 -> 404+00000 - ?VX (Use 470 For Readout) (Octal)
-Undocking | 405+00000 -> 405+00000 - ?VY (Use 471 For Readout) (Octal)
-Undocking | 406+00000 -> 406+00000 - ?VZ (Use 472 For Readout) (Octal)
-Undocking | 470R -> 470R - ?VX Measured (LM) (+ Up) (Use 404 to Zero) (.1fps)
+Undocking | 404+00000 -> 404+00000 - dVX (Use 470 For Readout) (Octal)
+Undocking | 405+00000 -> 405+00000 - dVY (Use 471 For Readout) (Octal)
+Undocking | 406+00000 -> 406+00000 - dVZ (Use 472 For Readout) (Octal)
+Undocking | 470R -> 470R - dVX Measured (LM) (+ Up) (Use 404 to Zero) (.1fps)
 DOI | 317R (Range) -> 317R (Range) - LM to CSM Range (R) (Computed) (.1 nm)
 DOI | 440R (Range Rate) -> 440R (Range Rate) - Range Rate Between LM and CSM (RDOT) (-closing) (.1fps)
 DOI | 400+3 -> 400+3 - IMU Align
 DOI | 400R -> 400R - AGS FUNCTION SELECTOR
 DOI | 277R (Theta) -> 277R (Theta) - Angle Between Local Horizon and Z body Axls (.01°)
 DOI | 400+1 -> 400+1 - Auto Guidance Steering
-DOI | 410+5 -> 410+5 - External ?V
-DOI | 450 -> 450 - ?VX (LV) (+Fwd) (.1fps)
-DOI | 451 -> 451 - ?VY (LV) (+Rt) (.1fps)
-DOI | 452 -> 452 - ?VZ (LV) (+Dn) (.1fps)
+DOI | 410+5 -> 410+5 - External dV
+DOI | 450 -> 450 - dVX (LV) (+Fwd) (.1fps)
+DOI | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
+DOI | 452 -> 452 - dVZ (LV) (+Dn) (.1fps)
 DOI | 411R -> 411R - CANT ANGLE CORRECTION SELECTOR.
 DOI | 407R -> 407R - REFERENCE FRAME SELECTOR FOR FXT DV
-DOI | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
-DOI | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
-DOI | 501R -> 501R - ?Vgy (LM) (+ Rt) (.1fps)
-DOI | 502R -> 502R - ?Vgz (LM) (+ Fwd) (.1fps)
+DOI | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
+DOI | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
+DOI | 501R -> 501R - dVgy (LM) (+ Rt) (.1fps)
+DOI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
 PDI | 240+ -> 240+ - X Position Comp (LM) (100 ft)
 PDI | 262-00150 -> 262-00150 - Z Velocity Comp (LM) (.1fps)
 PDI | 254+07672 (TLAND) -> 254+07672 (TLAND) - LM Ephemeris Pata (Epoch Time) (.1 min)
@@ -128,8 +128,8 @@ Lunar Liftoff | 547R (+00000) -> 547R (+00000) - Lunar Align Azimuth Correction 
 Lunar Liftoff | 623+0 -> 623+0 - Z Body Parallel to CSM Orbit Plane When in Guidance Steering (400 set to +10000)
 Lunar Liftoff | 400+4E -> 400+4E - Lunar Align
 Lunar Liftoff | 400+1 -> 400+1 - Auto Guidance Steering
-Lunar Liftoff | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
-Lunar Liftoff | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
+Lunar Liftoff | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
+Lunar Liftoff | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
 Lunar Liftoff | 315R (HA) -> 315R (HA) - Predicted Altitude of LM Apogee (.1 nm)
 Lunar Liftoff | 403R (HP) -> 403R (HP) - LM Perigee Altitude (Hp) (.1 nm)
 Lunar Liftoff | 313R (TFF) -> 313R (TFF) - Time to Pericynthian (.01 min)
@@ -140,7 +140,7 @@ Rendezvous | 275+ -> 275+ - Desired TIG TPI (for CSI calc only) (.1 min)
 Rendezvous | 605+ -> 605+ - Desired Cotangent of LOS at TPI (COTAN LOS TPI) (Octal)
 Rendezvous | 416+1 -> 416+1 - For CSI Calculation Select CDH At 1/2 orbital period following CSI
 Rendezvous | 623+0 -> 623+0 - Z Body Parallel to CSM Orbit Plane When in Guidance Steering (400 set to +10000)
-Rendezvous | 451+0 -> 451+0 - ?VY (LV) (+Rt) (.1fps)
+Rendezvous | 451+0 -> 451+0 - dVY (LV) (+Rt) (.1fps)
 Rendezvous | 616+00007 -> 616+00007 - Ullage counter value for ullage completion (2 sec)
 CSI | 400+3 -> 400+3 - IMU Align
 CSI | 400R -> 400R - AGS FUNCTION SELECTOR
@@ -155,49 +155,49 @@ CSI | 400+3 -> 400+3 - IMU Align
 CSI | 400R -> 400R - AGS FUNCTION SELECTOR
 CSI | 277R (Theta) -> 277R (Theta) - Angle Between Local Horizon and Z body Axls (.01°)
 CSI | 400+0 -> 400+0 - Attitude Hold
-CSI | 410+5 -> 410+5 - External ?V
-CSI | 450 -> 450 - ?VX (LV) (+Fwd) (.1fps)
-CSI | 451 -> 451 - ?VY (LV) (+Rt) (.1fps)
-CSI | 452 -> 452 - ?VZ (LV) (+Dn) (.1fps)
-CSI | 407+0 -> 407+0 - Use Rotating External ?V Reference Frame
-CSI | 502R -> 502R - ?Vgz (LM) (+ Fwd) (.1fps)
-CSI | 407+1 -> 407+1 - Freeze External ?V in Inertial Space and allow ?V’s to Count
-CSI | 502R -> 502R - ?Vgz (LM) (+ Fwd) (.1fps)
+CSI | 410+5 -> 410+5 - External dV
+CSI | 450 -> 450 - dVX (LV) (+Fwd) (.1fps)
+CSI | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
+CSI | 452 -> 452 - dVZ (LV) (+Dn) (.1fps)
+CSI | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
+CSI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
+CSI | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+CSI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
 CDH | 400+2 -> 400+2 - Z-Body Axis Steering
 CDH | 417+1 -> 417+1 - Initialize Radar Filter
 CDH | 410+2 -> 410+2 - CDH Routine
 CDH | 373R -> 373R - AGS TIG CSI,CDH,TPI/TPM (.1 min)
 CDH | 310R -> 310R - Targeted TFI TPI (For TPI Search Routine) (.01 min)
 CDH | 477R -> 477R - Predicted HDOT at CSI,CDH, or TPI time (.1fps)
-CDH | 402R -> 402R - ?H in Coelliptic Orbit (CSI,CDH), Predicted Hp (TPI) (.1 nm)
-CDH | 450R -> 450R - ?VX (LV) (+Fwd) (.1fps)
-CDH | 452R -> 452R - ?VZ (LV) (+Dn) (.1fps)
+CDH | 402R -> 402R - dH in Coelliptic Orbit (CSI,CDH), Predicted Hp (TPI) (.1 nm)
+CDH | 450R -> 450R - dVX (LV) (+Fwd) (.1fps)
+CDH | 452R -> 452R - dVZ (LV) (+Dn) (.1fps)
 CDH | 317R (Range) -> 317R (Range) - LM to CSM Range (R) (Computed) (.1 nm)
 CDH | 440R (Range Rate) -> 440R (Range Rate) - Range Rate Between LM and CSM (RDOT) (-closing) (.1fps)
 CDH | 400+3 -> 400+3 - IMU Align
 CDH | 400R -> 400R - AGS FUNCTION SELECTOR
 CDH | 277R (Theta) -> 277R (Theta) - Angle Between Local Horizon and Z body Axls (.01°)
 CDH | 400+0 -> 400+0 - Attitude Hold
-CDH | 410+5 -> 410+5 - External ?V
-CDH | 450 -> 450 - ?VX (LV) (+Fwd) (.1fps)
-CDH | 451 -> 451 - ?VY (LV) (+Rt) (.1fps)
-CDH | 452 -> 452 - ?VZ (LV) (+Dn) (.1fps)
-CDH | 407+0 -> 407+0 - Use Rotating External ?V Reference Frame
-CDH | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
-CDH | 407+1 -> 407+1 - Freeze External ?V in Inertial Space and allow ?V’s to Count
-CDH | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
-PC | 410+5 -> 410+5 - External ?V
-PC | 450+0 -> 450+0 - ?VX (LV) (+Fwd) (.1fps)
-PC | 451 -> 451 - ?VY (LV) (+Rt) (.1fps)
-PC | 452+0 -> 452+0 - ?VZ (LV) (+Dn) (.1fps)
-PC | 407+0 -> 407+0 - Use Rotating External ?V Reference Frame
+CDH | 410+5 -> 410+5 - External dV
+CDH | 450 -> 450 - dVX (LV) (+Fwd) (.1fps)
+CDH | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
+CDH | 452 -> 452 - dVZ (LV) (+Dn) (.1fps)
+CDH | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
+CDH | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
+CDH | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+CDH | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
+PC | 410+5 -> 410+5 - External dV
+PC | 450+0 -> 450+0 - dVX (LV) (+Fwd) (.1fps)
+PC | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
+PC | 452+0 -> 452+0 - dVZ (LV) (+Dn) (.1fps)
+PC | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
 PC | 270R -> 270R - Present Vy Out-of-CSM Orbit Plane Velocity (Vyo) (.1fps)
-PC | 501R -> 501R - ?Vgy (LM) (+ Rt) (.1fps)
-PC | 407+1 -> 407+1 - Freeze External ?V in Inertial Space and allow ?V’s to Count
+PC | 501R -> 501R - dVgy (LM) (+ Rt) (.1fps)
+PC | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
 PC | 270R -> 270R - Present Vy Out-of-CSM Orbit Plane Velocity (Vyo) (.1fps)
 PC | 417+1 -> 417+1 - Initialize Radar Filter
 PC | 410+2 -> 410+2 - CDH Routine
-PC | 451+0 -> 451+0 - ?VY (LV) (+Rt) (.1fps)
+PC | 451+0 -> 451+0 - dVY (LV) (+Rt) (.1fps)
 TPI | 400+2 -> 400+2 - Z-Body Axis Steering
 TPI | 417+1 -> 417+1 - Initialize Radar Filter
 TPI | 410+3 -> 410+3 - TPI Search Routine
@@ -206,38 +206,38 @@ TPI | 310+02600 (No Enter) -> 310+02600 (No Enter) - Targeted TFI TPI (For TPI S
 TPI | 303R -> 303R - Predicted LOS at TIG TPI (TPI mode), LM/CSM Central Angle at CDH (CSI,CDH, O.I.) (.01°)
 TPI | 410+4 -> 410+4 - TPI Execute Routine
 TPI | 370R -> 370R - VELOCITY TO GAIN MAGNITUDE
-TPI | 371R -> 371R - ?V for CDH (Valid in CSI, Coast), ?V Direct Trans & Brak (TPI) (.1fps)
+TPI | 371R -> 371R - dV for CDH (Valid in CSI, Coast), dV Direct Trans & Brak (TPI) (.1fps)
 TPI | 310+01300 (No Enter) -> 310+01300 (No Enter) - Targeted TFI TPI (For TPI Search Routine) (.01 min)
 TPI | 303R -> 303R - Predicted LOS at TIG TPI (TPI mode), LM/CSM Central Angle at CDH (CSI,CDH, O.I.) (.01°)
 TPI | 277R (Theta) -> 277R (Theta) - Angle Between Local Horizon and Z body Axls (.01°)
 TPI | 310+00800 (No Enter) -> 310+00800 (No Enter) - Targeted TFI TPI (For TPI Search Routine) (.01 min)
 TPI | 303R -> 303R - Predicted LOS at TIG TPI (TPI mode), LM/CSM Central Angle at CDH (CSI,CDH, O.I.) (.01°)
 TPI | 410+4 -> 410+4 - TPI Execute Routine
-TPI | 404+0 -> 404+0 - ?VX (Use 470 For Readout) (Octal)
-TPI | 405+0 -> 405+0 - ?VY (Use 471 For Readout) (Octal)
-TPI | 406+0 -> 406+0 - ?VZ (Use 472 For Readout) (Octal)
+TPI | 404+0 -> 404+0 - dVX (Use 470 For Readout) (Octal)
+TPI | 405+0 -> 405+0 - dVY (Use 471 For Readout) (Octal)
+TPI | 406+0 -> 406+0 - dVZ (Use 472 For Readout) (Octal)
 TPI | 373R -> 373R - AGS TIG CSI,CDH,TPI/TPM (.1 min)
 TPI | 267R -> 267R - Delta Velocity To Be Gained (.1fps)
-TPI | 371R -> 371R - ?V for CDH (Valid in CSI, Coast), ?V Direct Trans & Brak (TPI) (.1fps)
+TPI | 371R -> 371R - dV for CDH (Valid in CSI, Coast), dV Direct Trans & Brak (TPI) (.1fps)
 TPI | 400+0 -> 400+0 - Attitude Hold
-TPI | 450 -> 450 - ?VX (LV) (+Fwd) (.1fps)
-TPI | 451 -> 451 - ?VY (LV) (+Rt) (.1fps)
-TPI | 452 -> 452 - ?VZ (LV) (+Dn) (.1fps)
-TPI | 407+0 -> 407+0 - Use Rotating External ?V Reference Frame
-TPI | 502R -> 502R - ?Vgz (LM) (+ Fwd) (.1fps)
-TPI | 407+1 -> 407+1 - Freeze External ?V in Inertial Space and allow ?V’s to Count
-TPI | 502R -> 502R - ?Vgz (LM) (+ Fwd) (.1fps)
-MCC1 | 404+0 -> 404+0 - ?VX (Use 470 For Readout) (Octal)
-MCC1 | 405+0 -> 405+0 - ?VY (Use 471 For Readout) (Octal)
-MCC1 | 406+0 -> 406+0 - ?VZ (Use 472 For Readout) (Octal)
+TPI | 450 -> 450 - dVX (LV) (+Fwd) (.1fps)
+TPI | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
+TPI | 452 -> 452 - dVZ (LV) (+Dn) (.1fps)
+TPI | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
+TPI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
+TPI | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+TPI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
+MCC1 | 404+0 -> 404+0 - dVX (Use 470 For Readout) (Octal)
+MCC1 | 405+0 -> 405+0 - dVY (Use 471 For Readout) (Octal)
+MCC1 | 406+0 -> 406+0 - dVZ (Use 472 For Readout) (Octal)
 MCC1 | 400+2 -> 400+2 - Z-Body Axis Steering
-MCC1 | 407+1 -> 407+1 - Freeze External ?V in Inertial Space and allow ?V’s to Count
-MCC1 | 472R -> 472R - ?VZ Measured (LM) (+ Fwd) (Use 406 to Zero) (.1fps)
-MCC2 | 404+0 -> 404+0 - ?VX (Use 470 For Readout) (Octal)
-MCC2 | 405+0 -> 405+0 - ?VY (Use 471 For Readout) (Octal)
-MCC2 | 406+0 -> 406+0 - ?VZ (Use 472 For Readout) (Octal)
-MCC2 | 407+1 -> 407+1 - Freeze External ?V in Inertial Space and allow ?V’s to Count
-MCC2 | 472R -> 472R - ?VZ Measured (LM) (+ Fwd) (Use 406 to Zero) (.1fps)
+MCC1 | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+MCC1 | 472R -> 472R - dVZ Measured (LM) (+ Fwd) (Use 406 to Zero) (.1fps)
+MCC2 | 404+0 -> 404+0 - dVX (Use 470 For Readout) (Octal)
+MCC2 | 405+0 -> 405+0 - dVY (Use 471 For Readout) (Octal)
+MCC2 | 406+0 -> 406+0 - dVZ (Use 472 For Readout) (Octal)
+MCC2 | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+MCC2 | 472R -> 472R - dVZ Measured (LM) (+ Fwd) (Use 406 to Zero) (.1fps)
 AGS Activation & Self Test | 000+888888 -> 000+888888 - DEDA Display Segment Test
 AGS Activation & Self Test | 123-45679 -> 123-45679 - Sign and Sequence Logic Test
 AGS Activation & Self Test | 412+0 Reinitiate Test -> 412+0 Reinitiate Test - Reinitiate Test
@@ -268,25 +268,25 @@ AGS Calibration | 400R -> 400R - AGS FUNCTION SELECTOR
 AGS Calibration | 544R -> 544R - X Gyro Drift Comp (.01°/hr)
 AGS Calibration | 545R -> 545R - Y Gyro Drift Comp (.01°/hr)
 AGS Calibration | 546R -> 546R - Z Gyro Drift Comp (.01°/hr)
-AGS DPS External dV | 410+5 -> 410+5 - External ?V
-AGS DPS External dV | 450+ -> 450+ - ?VX (LV) (+Fwd) (.1fps)
-AGS DPS External dV | 451+ -> 451+ - ?VY (LV) (+Rt) (.1fps)
-AGS DPS External dV | 452+ -> 452+ - ?VZ (LV) (+Dn) (.1fps)
+AGS DPS External dV | 410+5 -> 410+5 - External dV
+AGS DPS External dV | 450+ -> 450+ - dVX (LV) (+Fwd) (.1fps)
+AGS DPS External dV | 451+ -> 451+ - dVY (LV) (+Rt) (.1fps)
+AGS DPS External dV | 452+ -> 452+ - dVZ (LV) (+Dn) (.1fps)
 AGS DPS External dV | 267R -> 267R - Delta Velocity To Be Gained (.1fps)
 AGS DPS External dV | 411+0 -> 411+0 - DPS or RCS Engine Select
 AGS DPS External dV | 400+1 Guidance Steering (Z-axis,400+2,507+1) -> 400+1 Guidance Steering (Z-axis,400+2,507+1) - Auto Guidance Steering
-AGS DPS External dV | 407+0 -> 407+0 - Use Rotating External ?V Reference Frame
-AGS DPS External dV | 501R -> 501R - ?Vgy (LM) (+ Rt) (.1fps)
-AGS DPS External dV | 502R -> 502R - ?Vgz (LM) (+ Fwd) (.1fps)
-AGS DPS External dV | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
-AGS DPS External dV | 501R -> 501R - ?Vgy (LM) (+ Rt) (.1fps)
-AGS DPS External dV | 502R -> 502R - ?Vgz (LM) (+ Fwd) (.1fps)
-AGS DPS External dV | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
-P42 APS Thrusting | 410+5 -> 410+5 - External ?V
-P42 APS Thrusting | 450+ -> 450+ - ?VX (LV) (+Fwd) (.1fps)
-P42 APS Thrusting | 451+ -> 451+ - ?VY (LV) (+Rt) (.1fps)
-P42 APS Thrusting | 452+ -> 452+ - ?VZ (LV) (+Dn) (.1fps)
+AGS DPS External dV | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
+AGS DPS External dV | 501R -> 501R - dVgy (LM) (+ Rt) (.1fps)
+AGS DPS External dV | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
+AGS DPS External dV | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
+AGS DPS External dV | 501R -> 501R - dVgy (LM) (+ Rt) (.1fps)
+AGS DPS External dV | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
+AGS DPS External dV | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
+P42 APS Thrusting | 410+5 -> 410+5 - External dV
+P42 APS Thrusting | 450+ -> 450+ - dVX (LV) (+Fwd) (.1fps)
+P42 APS Thrusting | 451+ -> 451+ - dVY (LV) (+Rt) (.1fps)
+P42 APS Thrusting | 452+ -> 452+ - dVZ (LV) (+Dn) (.1fps)
 P42 APS Thrusting | 267R -> 267R - Delta Velocity To Be Gained (.1fps)
 P42 APS Thrusting | 407+0 -> 407+0 - REFERENCE FRAME SELECTOR FOR FXT DV
-P42 APS Thrusting | 500R -> 500R - ?Vgx (LM) (+ Up) (.1fps)
+P42 APS Thrusting | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
 

@@ -31,7 +31,7 @@ Flightplan | V37E 20E -> V37E 20E - Change Prog (Major Mode) - Rendezvous Naviga
 Flightplan | V56E -> V56E - Terminate Tracking (P20)
 Flightplan | 00E -> 00E - CMC Idle
 Flightplan | V83E -> V83E - Start REND Param Display (R31)
-Flightplan | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Flightplan | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target dV
 Flightplan | 20E -> 20E - Rendezvous Navigation
 Flightplan | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
 Flightplan | V87E -> V87E - Set VHF range flag
@@ -154,7 +154,7 @@ Rendezvous | V25E -> V25E - Load Component 1&2&3
 Rendezvous | V88E -> V88E - Reset VHF range flag
 Rendezvous | 40E -> 40E - SPS Thrusting
 Rendezvous | V56E -> V56E - Terminate Tracking (P20)
-Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target dV
 Rendezvous | 20E -> 20E - Rendezvous Navigation
 Rendezvous | V87E -> V87E - Set VHF range flag
 Rendezvous | V37E 33E -> V37E 33E - Change Prog (Major Mode) - CDH Prethrust
@@ -171,7 +171,7 @@ Rendezvous | V22E -> V22E - Load Component 2 in R2
 Rendezvous | V25E -> V25E - Load Component 1&2&3
 Rendezvous | 41E -> 41E - RCS Thrusting
 Rendezvous | V56E -> V56E - Terminate Tracking (P20)
-Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target dV
 Rendezvous | 20E -> 20E - Rendezvous Navigation
 Rendezvous | V87E -> V87E - Set VHF range flag
 Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
@@ -184,19 +184,19 @@ Rendezvous | V25E -> V25E - Load Component 1&2&3
 Rendezvous | V88E -> V88E - Reset VHF range flag
 Rendezvous | 40E -> 40E - SPS Thrusting
 Rendezvous | V56E -> V56E - Terminate Tracking (P20)
-Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target dV
 Rendezvous | 20E -> 20E - Rendezvous Navigation
 Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
 Rendezvous | V87E -> V87E - Set VHF range flag
 Rendezvous | V88E -> V88E - Reset VHF range flag
 Rendezvous | 41E -> 41E - RCS Thrusting
-Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target dV
 Rendezvous | 35E -> 35E - TPM Prethrust
 Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
 Rendezvous | V87E -> V87E - Set VHF range flag
 Rendezvous | V88E -> V88E - Reset VHF range flag
 Rendezvous | 41E -> 41E - RCS Thrusting
-Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target dV
 Rendezvous | V56E -> V56E - Terminate Tracking (P20)
 Rendezvous | 00E -> 00E - CMC Idle
 Rendezvous | V62E -> V62E - Display total att error (N22-N20)
@@ -345,7 +345,7 @@ P23 Cislunar Navigation (N88) | 00E -> 00E - CMC Idle
 P23 Additional Mark (N88) | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
 P23 Additional Mark (N88) | V25E -> V25E - Load Component 1&2&3
 P23 Additional Mark (N88) | V25E -> V25E - Load Component 1&2&3
-P30 External DV | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External ?V
+P30 External DV | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External dV
 P30 External DV | 00E -> 00E - CMC Idle
 P37 Return to Earth | V37E 37E -> V37E 37E - Change Prog (Major Mode) - Return to Earth
 P37 Return to Earth | V22E -> V22E - Load Component 2 in R2
@@ -402,7 +402,7 @@ P52 IMU Realign (REFSMMAT) | V37E 52E -> V37E 52E - Change Prog (Major Mode) - I
 P52 IMU Realign (REFSMMAT) | V22E -> V22E - Load Component 2 in R2
 P52 IMU Realign (REFSMMAT) | 00E -> 00E - CMC Idle
 P52 IMU Realign (Bad Angle) | V32 -> V32 - Recycle Prog
-P76 Target dV | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+P76 Target dV | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target dV
 SCS Attitude Ref Comp Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 SCS Attitude Ref Comp Check | V06 N20E (ICDU angles) -> V06 N20E (ICDU angles) - Display Decimal - Present ICDU Angles (R,P,Y .01°)
 SCS Attitude Ref Comp Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
@@ -427,7 +427,7 @@ MCC-4 | V66E -> V66E - Set CSM State Vector into LM State Vector
 MCC-4 | V66E -> V66E - Set CSM State Vector into LM State Vector
 MCC-4 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
 LOI-1 | V66E -> V66E - Set CSM State Vector into LM State Vector
-LOI-1 | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External ?V
+LOI-1 | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External dV
 LOI-1 | 00E -> 00E - CMC Idle
 LOI-1 | V48E -> V48E - Load DAP (R03)
 LOI-1 | V24E -> V24E - Load Component 1&2
@@ -443,7 +443,7 @@ LOI-1 | V25E -> V25E - Load Component 1&2&3
 LOI-1 | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
 LOI-1 | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
 LOI-1 | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
-LOI-1 | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External ?V
+LOI-1 | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External dV
 LOI-1 | 00E -> 00E - CMC Idle
 LOI-1 | V62E -> V62E - Display total att error (N22-N20)
 LOI-1 | V49E -> V49E - Start Crew Defined MNVR(R62)
