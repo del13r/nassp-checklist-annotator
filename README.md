@@ -1,9 +1,10 @@
 # nassp-checklist-annotator
 This idea came about as I was finding myself often pausing NASSP to go and look up Verb/Noun/Program/DEDA lists and what they mean and what units they use.
-My boundaries were, only use official definitions, do not replace any entries, only append annotations.
+My boundaries for this project were, only use official definitions the pilots had with them, do not replace any original entries, only append annotations.
+
 I originally created this solution just for me, and I now think other NASSP users might benefit from this work.
-At first, it was a simple manual find/replace action in excel which got very repetitive.
-I was now in search of a way to automate the find/replace action in excel.
+At first, it was just a simple manual find/replace action in excel which got very repetitive.
+I was now in search of a way to automate the find/replace action in excel with a view of one day applying these annotations to any NASSP mission that has XLS checklists.
 
 Here is the approach I settled on for CSM:
 Build a dictionary file with all of the CSM Verb/Noun/Program codes and descriptions that Mike Collins had with him in the CSM on Apollo 11.
@@ -19,12 +20,12 @@ LM Source:
 APOLLO XI LM-5 FLIGHT CREW G&N DICTIONARY
 https://www.ibiblio.org/apollo/Documents/ApolloXI_FlightCrewG&NDictionary_5-29-1969.pdf
 
-Note: For the DEDA inputs/outputs, there were some items not shown in the G&N Dictionary, and therefore the following LM/AGS source was used to fill in any gaps:
+Note: For the DEDA inputs/outputs, there were some items not shown in the G&N Dictionary (less than 10), and therefore the following LM/AGS source was used to fill in any gaps:
 
 LM/AGS OPERATING MANUAL FLIGHT PROGRAM 6
 https://apollojournals.org/alsj/LM_AGS_FP6_OperatingManual.pdf
 
-Once the dictionaries were built, I intended to be the least intrusive I could be to the source checklist files in the older XLS format.
+Once the respective CSM and LM dictionaries were built, I intended to be the least intrusive I could be to the source checklist files in the older XLS format.
 The method I settled on was to open both my dictionary file that I created in excel and the NASSP checklist file in excel and use several VBA scripts to annotate extra information to the end of the original text in the NASSP checklist cells when they match verb/noun/program/DEDA codes found in the dictionary.
 
 The advantages of this approach is that the source XLS file is not excessively modified, and that the original text and annotations are retained as the original checklist dev intended.
