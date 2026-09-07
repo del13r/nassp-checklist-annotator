@@ -7,10 +7,16 @@ Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
 Flightplan | V64E -> V64E - Start S-band ant routine (R05)
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 21112E -> 21112E - CFG=2=CSM&LM | A/C=1=Use | B/D=1=Use | DB=1=5.0° | RATE=2=0.5°/sec
+Flightplan | 11111E -> 11111E - ROLLQD=1=A/C | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Flightplan | V46E -> V46E - Activate DAP
 Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 21102E -> 21102E - CFG=2=CSM&LM | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=2=0.5°/sec
+Flightplan | 11111E -> 11111E - ROLLQD=1=A/C | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Flightplan | V46E -> V46E - Activate DAP
 Flightplan | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
 Flightplan | V22E -> V22E - Load Component 2 in R2
@@ -34,6 +40,9 @@ Flightplan | V56E -> V56E - Terminate Tracking (P20)
 Flightplan | 00E -> 00E - CMC Idle
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 11101E -> 11101E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=1=0.2°/sec
+Flightplan | 11111E -> 11111E - ROLLQD=1=A/C | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Flightplan | V44E -> V44E - Set Surface Flag
 Flightplan | V64E -> V64E - Start S-band ant routine (R05)
 Flightplan | V83E -> V83E - Start REND Param Display (R31)
@@ -46,8 +55,14 @@ Flightplan | V64E -> V64E - Start S-band ant routine (R05)
 Flightplan | V83E -> V83E - Start REND Param Display (R31)
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 11111E -> 11111E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=1=5.0° | RATE=1=0.2°/sec
+Flightplan | 01100E -> 01100E - ROLLQD=0=B/D | QDA=1=Use | QBD=1=Use | QDC=0=Fail | QDD=0=Fail
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 11101E -> 11101E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=1=0.2°/sec
+Flightplan | 11111E -> 11111E - ROLLQD=1=A/C | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Flightplan | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
 Flightplan | V22E -> V22E - Load Component 2 in R2
 Flightplan | V25E -> V25E - Load Component 1&2&3
@@ -55,18 +70,27 @@ Flightplan | V34E -> V34E - Terminate Function
 Flightplan | 00E -> 00E - CMC Idle
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 11111E -> 11111E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=1=5.0° | RATE=1=0.2°/sec
+Flightplan | 01111E -> 01111E - ROLLQD=0=B/D | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Flightplan | V83E -> V83E - Start REND Param Display (R31)
 Flightplan | V45E -> V45E - Reset Surface Flag
 Flightplan | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 Flightplan | V64E -> V64E - Start S-band ant routine (R05)
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 11101E -> 11101E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=1=0.2°/sec
+Flightplan | 01111E -> 01111E - ROLLQD=0=B/D | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Flightplan | V49E -> V49E - Start Crew Defined MNVR(R62)
 Flightplan | V25E -> V25E - Load Component 1&2&3
 Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
 Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
 Flightplan | V48E -> V48E - Load DAP (R03)
 Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | 11102E -> 11102E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=2=0.5°/sec
+Flightplan | 01111E -> 01111E - ROLLQD=0=B/D | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Flightplan | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Startup Checklist | V35E -> V35E - Test Lights
 Startup Checklist | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 Startup Checklist | V37E 01E -> V37E 01E - Change Prog (Major Mode) - Pre-Launch Initialization
@@ -89,6 +113,9 @@ TLI Checklist | 00E -> 00E - CMC Idle
 TLI Checklist | V66E -> V66E - Set CSM State Vector into LM State Vector
 CSM-LV Separation | V48E -> V48E - Load DAP (R03)
 CSM-LV Separation | V24E -> V24E - Load Component 1&2
+CSM-LV Separation | 11103E -> 11103E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=3=2.0°/sec
+CSM-LV Separation | 01111E -> 01111E - ROLLQD=0=B/D | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+CSM-LV Separation | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 CSM-LV Separation | V46E -> V46E - Activate DAP
 CSM-LV Separation | V60E -> V60E - Set N17 = N20
 CSM-LV Separation | V63E -> V63E - Display total astro att error (N17-N20)
@@ -98,12 +125,18 @@ CSM-LV Separation | V25E -> V25E - Load Component 1&2&3
 CSM-LV Separation | V62E -> V62E - Display total att error (N22-N20)
 LM Ejection | V48E -> V48E - Load DAP (R03)
 LM Ejection | V24E -> V24E - Load Component 1&2
+LM Ejection | 21101E -> 21101E - CFG=2=CSM&LM | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=1=0.2°/sec
+LM Ejection | 11111E -> 11111E - ROLLQD=1=A/C | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+LM Ejection | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 LM Ejection | V24E -> V24E - Load Component 1&2
 LM Ejection | V24E -> V24E - Load Component 1&2
 LM Ejection | V46E -> V46E - Activate DAP
 Undocking | V83E -> V83E - Start REND Param Display (R31)
 Undocking | V48E -> V48E - Load DAP (R03)
 Undocking | V24E -> V24E - Load Component 1&2
+Undocking | 11102E -> 11102E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=2=0.5°/sec
+Undocking | 11111E -> 11111E - ROLLQD=1=A/C | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+Undocking | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Undocking | V46E -> V46E - Activate DAP
 Rendezvous | V37E 20E -> V37E 20E - Change Prog (Major Mode) - Rendezvous Navigation
 Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
@@ -175,10 +208,16 @@ CSM Active Docking | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 CSM Active Docking | V64E -> V64E - Start S-band ant routine (R05)
 CSM Active Docking | V48E -> V48E - Load DAP (R03)
 CSM Active Docking | V24E -> V24E - Load Component 1&2
+CSM Active Docking | 61102E -> 61102E - CFG=6=CSM&LMASC | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=2=0.5°/sec
+CSM Active Docking | 01111E -> 01111E - ROLLQD=0=B/D | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+CSM Active Docking | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 CSM Active Docking | V24E -> V24E - Load Component 1&2
 CSM Active Docking | V46E -> V46E - Activate DAP
 LM Jettison | V48E -> V48E - Load DAP (R03)
 LM Jettison | V24E -> V24E - Load Component 1&2
+LM Jettison | 11102E -> 11102E - CFG=1=CSMONLY | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=2=0.5°/sec
+LM Jettison | 11111E -> 11111E - ROLLQD=1=A/C | QDA=1=Use | QBD=1=Use | QDC=1=Use | QDD=1=Use
+LM Jettison | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 LM Jettison | V46E -> V46E - Activate DAP
 LM Jettison | V37E 47E -> V37E 47E - Change Prog (Major Mode) - Thrust Monitor
 LM Jettison | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
@@ -229,6 +268,7 @@ Docked IMU Coarse Align | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC 
 Start SCS PTC | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 Start SCS PTC | V48E -> V48E - Load DAP (R03)
 Start SCS PTC | V24E -> V24E - Load Component 1&2
+Start SCS PTC | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Start SCS PTC | V62E -> V62E - Display total att error (N22-N20)
 Start SCS PTC | V49E -> V49E - Start Crew Defined MNVR(R62)
 Start SCS PTC | V25E -> V25E - Load Component 1&2&3
@@ -236,9 +276,11 @@ Terminate SCS PTC | P00 -> P00 - Change Prog (Major Mode) - CMC Idle
 Terminate SCS PTC | V16 N20 -> V16 N20 - Monitor Decimal - Present ICDU Angles (R,P,Y .01°)
 Terminate SCS PTC | V48E -> V48E - Load DAP (R03)
 Terminate SCS PTC | V24E -> V24E - Load Component 1&2
+Terminate SCS PTC | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Terminate SCS PTC | V46E -> V46E - Activate DAP
 Start G&N PTC | V48E -> V48E - Load DAP (R03)
 Start G&N PTC | V24E -> V24E - Load Component 1&2
+Start G&N PTC | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Start G&N PTC | V46E -> V46E - Activate DAP
 Start G&N PTC | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 Start G&N PTC | V49E -> V49E - Start Crew Defined MNVR(R62)
@@ -317,6 +359,7 @@ P37 Return to Earth -MA | V23E -> V23E - Load Component 3 in R3
 P37 Return to Earth -MA | 00E -> 00E - CMC Idle
 P40 SPS Thrusting | V48E -> V48E - Load DAP (R03)
 P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
+P40 SPS Thrusting | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 P40 SPS Thrusting | ABC02E -> ABC02E - (program not found)
 P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
 P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
@@ -331,6 +374,7 @@ P40 SPS Thrusting | V82E -> V82E - Start Orbit Param Disp (R30)
 P40 SPS Thrusting | 00E -> 00E - CMC Idle
 P41 RCS Thrusting | V48E -> V48E - Load DAP (R03)
 P41 RCS Thrusting | V24E -> V24E - Load Component 1&2
+P41 RCS Thrusting | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 P41 RCS Thrusting | ABC02E -> ABC02E - (program not found)
 P41 RCS Thrusting | V24E -> V24E - Load Component 1&2
 P41 RCS Thrusting | V46E -> V46E - Activate DAP
@@ -391,6 +435,8 @@ LOI-1 | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External ?V
 LOI-1 | 00E -> 00E - CMC Idle
 LOI-1 | V48E -> V48E - Load DAP (R03)
 LOI-1 | V24E -> V24E - Load Component 1&2
+LOI-1 | 21102E -> 21102E - CFG=2=CSM&LM | A/C=1=Use | B/D=1=Use | DB=0=0.5° | RATE=2=0.5°/sec
+LOI-1 | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 LOI-1 | V24E -> V24E - Load Component 1&2
 LOI-1 | V24E -> V24E - Load Component 1&2
 LOI-1 | V46E -> V46E - Activate DAP
@@ -420,6 +466,8 @@ LOI-2 | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
 LOI-2 | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
 LOI-2 | V48E -> V48E - Load DAP (R03)
 LOI-2 | V24E -> V24E - Load Component 1&2
+LOI-2 | 20101E -> 20101E - CFG=2=CSM&LM | A/C=0=Fail | B/D=1=Use | DB=0=0.5° | RATE=1=0.2°/sec
+LOI-2 | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 LOI-2 | V21E -> V21E - Load Component 1 in R1
 LOI-2 | V24E -> V24E - Load Component 1&2
 LOI-2 | V46E -> V46E - Activate DAP
@@ -436,6 +484,8 @@ Plane Change | 00E -> 00E - CMC Idle
 Plane Change | V64E -> V64E - Start S-band ant routine (R05)
 Plane Change | V48E -> V48E - Load DAP (R03)
 Plane Change | V24E -> V24E - Load Component 1&2
+Plane Change | 11001E -> 11001E - CFG=1=CSMONLY | A/C=1=Use | B/D=0=Fail | DB=0=0.5° | RATE=1=0.2°/sec
+Plane Change | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 Plane Change | V21E -> V21E - Load Component 1 in R1
 Plane Change | V24E -> V24E - Load Component 1&2
 Plane Change | V46E -> V46E - Activate DAP
@@ -453,6 +503,8 @@ TEI | V49E -> V49E - Start Crew Defined MNVR(R62)
 TEI | V25E -> V25E - Load Component 1&2&3
 TEI | V48E -> V48E - Load DAP (R03)
 TEI | V24E -> V24E - Load Component 1&2
+TEI | 10101E -> 10101E - CFG=1=CSMONLY | A/C=0=Fail | B/D=1=Use | DB=0=0.5° | RATE=1=0.2°/sec
+TEI | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
 TEI | V21E -> V21E - Load Component 1 in R1
 TEI | V24E -> V24E - Load Component 1&2
 TEI | V46E -> V46E - Activate DAP
