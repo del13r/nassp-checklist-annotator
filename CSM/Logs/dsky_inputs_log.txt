@@ -1,0 +1,475 @@
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | V46E -> V46E - Activate DAP
+Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | V46E -> V46E - Activate DAP
+Flightplan | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
+Flightplan | V22E -> V22E - Load Component 2 in R2
+Flightplan | V25E -> V25E - Load Component 1&2&3
+Flightplan | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V16 N20E -> V16 N20E - Monitor Decimal - Present ICDU Angles (R,P,Y .01°)
+Flightplan | V37E 20E -> V37E 20E - Change Prog (Major Mode) - Rendezvous Navigation
+Flightplan | V56E -> V56E - Terminate Tracking (P20)
+Flightplan | 00E -> 00E - CMC Idle
+Flightplan | V37E 20E -> V37E 20E - Change Prog (Major Mode) - Rendezvous Navigation
+Flightplan | V56E -> V56E - Terminate Tracking (P20)
+Flightplan | 00E -> 00E - CMC Idle
+Flightplan | V83E -> V83E - Start REND Param Display (R31)
+Flightplan | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Flightplan | 20E -> 20E - Rendezvous Navigation
+Flightplan | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
+Flightplan | V87E -> V87E - Set VHF range flag
+Flightplan | V88E -> V88E - Reset VHF range flag
+Flightplan | V56E -> V56E - Terminate Tracking (P20)
+Flightplan | 00E -> 00E - CMC Idle
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | V44E -> V44E - Set Surface Flag
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V83E -> V83E - Start REND Param Display (R31)
+Flightplan | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
+Flightplan | V22E -> V22E - Load Component 2 in R2
+Flightplan | V25E -> V25E - Load Component 1&2&3
+Flightplan | V34E -> V34E - Terminate Function
+Flightplan | 00E -> 00E - CMC Idle
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V83E -> V83E - Start REND Param Display (R31)
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
+Flightplan | V22E -> V22E - Load Component 2 in R2
+Flightplan | V25E -> V25E - Load Component 1&2&3
+Flightplan | V34E -> V34E - Terminate Function
+Flightplan | 00E -> 00E - CMC Idle
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | V83E -> V83E - Start REND Param Display (R31)
+Flightplan | V45E -> V45E - Reset Surface Flag
+Flightplan | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Flightplan | V49E -> V49E - Start Crew Defined MNVR(R62)
+Flightplan | V25E -> V25E - Load Component 1&2&3
+Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
+Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
+Flightplan | V48E -> V48E - Load DAP (R03)
+Flightplan | V24E -> V24E - Load Component 1&2
+Startup Checklist | V35E -> V35E - Test Lights
+Startup Checklist | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Startup Checklist | V37E 01E -> V37E 01E - Change Prog (Major Mode) - Pre-Launch Initialization
+Change Launch Azimuth | V78E -> V78E - Update prelaunch azimuth
+Change Launch Azimuth | V21E -> V21E - Load Component 1 in R1
+Launch Checklist | V75 (No Enter) -> V75 (No Enter) - Backup Liftoff
+Insertion Checklist | V82E -> V82E - Start Orbit Param Disp (R30)
+Insertion Checklist | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Insertion Checklist | V66E -> V66E - Set CSM State Vector into LM State Vector
+Insertion Checklist | V48E -> V48E - Load DAP (R03)
+Insertion Checklist | V46E -> V46E - Activate DAP
+Insertion Checklist | V83E -> V83E - Start REND Param Display (R31)
+Insertion Checklist | V66E -> V66E - Set CSM State Vector into LM State Vector
+TLI Checklist | V48E -> V48E - Load DAP (R03)
+TLI Checklist | V46E -> V46E - Activate DAP
+TLI Checklist | V83E -> V83E - Start REND Param Display (R31)
+TLI Checklist | (DET 57:00) V37E 47E -> (DET 57:00) V37E 47E - Change Prog (Major Mode) - Thrust Monitor
+TLI Checklist | (DET 58:00) N62E -> (DET 58:00) N62E - R1=Vl-Inertial Vel Mag, R2=H Dot-Alt Rate, R3=H-Alt (FPS FPS .1 NM)
+TLI Checklist | 00E -> 00E - CMC Idle
+TLI Checklist | V66E -> V66E - Set CSM State Vector into LM State Vector
+CSM-LV Separation | V48E -> V48E - Load DAP (R03)
+CSM-LV Separation | V24E -> V24E - Load Component 1&2
+CSM-LV Separation | V46E -> V46E - Activate DAP
+CSM-LV Separation | V60E -> V60E - Set N17 = N20
+CSM-LV Separation | V63E -> V63E - Display total astro att error (N17-N20)
+CSM-LV Separation | V16 N20E -> V16 N20E - Monitor Decimal - Present ICDU Angles (R,P,Y .01°)
+CSM-LV Separation | V49E -> V49E - Start Crew Defined MNVR(R62)
+CSM-LV Separation | V25E -> V25E - Load Component 1&2&3
+CSM-LV Separation | V62E -> V62E - Display total att error (N22-N20)
+LM Ejection | V48E -> V48E - Load DAP (R03)
+LM Ejection | V24E -> V24E - Load Component 1&2
+LM Ejection | V24E -> V24E - Load Component 1&2
+LM Ejection | V24E -> V24E - Load Component 1&2
+LM Ejection | V46E -> V46E - Activate DAP
+Undocking | V83E -> V83E - Start REND Param Display (R31)
+Undocking | V48E -> V48E - Load DAP (R03)
+Undocking | V24E -> V24E - Load Component 1&2
+Undocking | V46E -> V46E - Activate DAP
+Rendezvous | V37E 20E -> V37E 20E - Change Prog (Major Mode) - Rendezvous Navigation
+Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
+Rendezvous | V80E -> V80E - Update LM State Vector
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V37E 32E -> V37E 32E - Change Prog (Major Mode) - CSI Prethrust
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V90E -> V90E - Request REND out of plane display (R36)
+Rendezvous | V22E -> V22E - Load Component 2 in R2
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | V90E -> V90E - Request REND out of plane display (R36)
+Rendezvous | V22E -> V22E - Load Component 2 in R2
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | V88E -> V88E - Reset VHF range flag
+Rendezvous | 40E -> 40E - SPS Thrusting
+Rendezvous | V56E -> V56E - Terminate Tracking (P20)
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | 20E -> 20E - Rendezvous Navigation
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V37E 33E -> V37E 33E - Change Prog (Major Mode) - CDH Prethrust
+Rendezvous | V67E (Reset W Matrix) -> V67E (Reset W Matrix) - W-Matrix RSS Error Display
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
+Rendezvous | V88E -> V88E - Reset VHF range flag
+Rendezvous | V90E -> V90E - Request REND out of plane display (R36)
+Rendezvous | V22E -> V22E - Load Component 2 in R2
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | V90E -> V90E - Request REND out of plane display (R36)
+Rendezvous | V22E -> V22E - Load Component 2 in R2
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | 41E -> 41E - RCS Thrusting
+Rendezvous | V56E -> V56E - Terminate Tracking (P20)
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | 20E -> 20E - Rendezvous Navigation
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
+Rendezvous | V37E 34E -> V37E 34E - Change Prog (Major Mode) - TPI Prethrust
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | 20E -> 20E - Rendezvous Navigation
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V37E 34E -> V37E 34E - Change Prog (Major Mode) - TPI Prethrust
+Rendezvous | V25E -> V25E - Load Component 1&2&3
+Rendezvous | V88E -> V88E - Reset VHF range flag
+Rendezvous | 40E -> 40E - SPS Thrusting
+Rendezvous | V56E -> V56E - Terminate Tracking (P20)
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | 20E -> 20E - Rendezvous Navigation
+Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V88E -> V88E - Reset VHF range flag
+Rendezvous | 41E -> 41E - RCS Thrusting
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | 35E -> 35E - TPM Prethrust
+Rendezvous | V93E (Reinitialize W-Matrix) -> V93E (Reinitialize W-Matrix) - Enable W matrix initialization
+Rendezvous | V87E -> V87E - Set VHF range flag
+Rendezvous | V88E -> V88E - Reset VHF range flag
+Rendezvous | 41E -> 41E - RCS Thrusting
+Rendezvous | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+Rendezvous | V56E -> V56E - Terminate Tracking (P20)
+Rendezvous | 00E -> 00E - CMC Idle
+Rendezvous | V62E -> V62E - Display total att error (N22-N20)
+Rendezvous | V89E -> V89E - Start REND Final ATT Routine (R63)
+Rendezvous | V22E -> V22E - Load Component 2 in R2
+CSM Active Docking | V37E 47E -> V37E 47E - Change Prog (Major Mode) - Thrust Monitor
+CSM Active Docking | V83E -> V83E - Start REND Param Display (R31)
+CSM Active Docking | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+CSM Active Docking | V64E -> V64E - Start S-band ant routine (R05)
+CSM Active Docking | V48E -> V48E - Load DAP (R03)
+CSM Active Docking | V24E -> V24E - Load Component 1&2
+CSM Active Docking | V24E -> V24E - Load Component 1&2
+CSM Active Docking | V46E -> V46E - Activate DAP
+LM Jettison | V48E -> V48E - Load DAP (R03)
+LM Jettison | V24E -> V24E - Load Component 1&2
+LM Jettison | V46E -> V46E - Activate DAP
+LM Jettison | V37E 47E -> V37E 47E - Change Prog (Major Mode) - Thrust Monitor
+LM Jettison | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Entry | V62E -> V62E - Display total att error (N22-N20)
+Entry | V49E -> V49E - Start Crew Defined MNVR(R62)
+Entry | V25E -> V25E - Load Component 1&2&3
+Entry | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+Entry | V66E -> V66E - Set CSM State Vector into LM State Vector
+CM-SM-Separation | V37E 61E -> V37E 61E - Change Prog (Major Mode) - Entry Preparation
+CM-SM-Separation | V16 N68E -> V16 N68E - Monitor Decimal - R1=Beta, CMD Bank Angle, R2=VI, Inertial Vel., R3=H Dot, Alt Rate (.01° FPS FPS)
+CMC Self Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+CMC Self Check | V25 N01E -> V25 N01E - Load Component 1&2&3 - Specify Machine Address (Fract) (.XXXXX)
+CMC Self Check | V15 N01E -> V15 N01E - Monitor Octal Comp 1,2&3 - Specify Machine Address (Fract) (.XXXXX)
+CMC Self Check | V21 N27E -> V21 N27E - Load Component 1 in R1 - Self-Test on/off sw
+CMC Self Check | 10E -> 10E - (program not found)
+CMC Self Check | V21 N27E -> V21 N27E - Load Component 1 in R1 - Self-Test on/off sw
+CMC Self Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+DSKY Condition Lights Test | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+DSKY Condition Lights Test | V35E -> V35E - Test Lights
+DSKY Condition Lights Test | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+DAP Orbital Rate | V48E -> V48E - Load DAP (R03)
+DAP Orbital Rate | V22E -> V22E - Load Component 2 in R2
+DAP Orbital Rate | V46E -> V46E - Activate DAP
+DAP Orbital Rate | V49E -> V49E - Start Crew Defined MNVR(R62)
+DAP Orbital Rate | V25E -> V25E - Load Component 1&2&3
+DAP Orbital Rate | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
+DAP Orbital Rate | V24 N01E -> V24 N01E - Load Component 1&2 - Specify Machine Address (Fract) (.XXXXX)
+DAP Orbital Rate | V24E -> V24E - Load Component 1&2
+DAP Orbital Rate | V21E -> V21E - Load Component 1 in R1
+DAP Orbital Rate | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
+IMU Power Up | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+CMC Standby | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+CMC Standby | V48E -> V48E - Load DAP (R03)
+CMC Standby | V21E -> V21E - Load Component 1 in R1
+CMC Standby | V46E -> V46E - Activate DAP
+CMC Standby | V37E 06E -> V37E 06E - Change Prog (Major Mode) - CMC Power Down
+CMC Power Up | 00E -> 00E - CMC Idle
+CMC Power Up | V48E -> V48E - Load DAP (R03)
+CMC Power Up | V21E -> V21E - Load Component 1 in R1
+CMC Power Up | V46E -> V46E - Activate DAP
+P27 Update | V37E 00E, or click FAIL if in PTC -> V37E 00E, or click FAIL if in PTC - Change Prog (Major Mode) - CMC Idle
+P27 Update | V37E 00E, or click FAIL if in PTC -> V37E 00E, or click FAIL if in PTC - Change Prog (Major Mode) - CMC Idle
+LGC Clock Sync & TEPHEM Update | V06N65E -> V06N65E - Display Decimal - Sampled CMC Time (fetched in interrupt) (hrs min .01 sec)
+LGC Clock Sync & TEPHEM Update | V05 N01E -> V05 N01E - Display Octal Comp 1,2&3 - Specify Machine Address (Fract) (.XXXXX)
+LGC Clock Sync & TEPHEM Update | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Docked IMU Coarse Align | V06 N20E -> V06 N20E - Display Decimal - Present ICDU Angles (R,P,Y .01°)
+Docked IMU Coarse Align | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Start SCS PTC | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Start SCS PTC | V48E -> V48E - Load DAP (R03)
+Start SCS PTC | V24E -> V24E - Load Component 1&2
+Start SCS PTC | V62E -> V62E - Display total att error (N22-N20)
+Start SCS PTC | V49E -> V49E - Start Crew Defined MNVR(R62)
+Start SCS PTC | V25E -> V25E - Load Component 1&2&3
+Terminate SCS PTC | P00 -> P00 - Change Prog (Major Mode) - CMC Idle
+Terminate SCS PTC | V16 N20 -> V16 N20 - Monitor Decimal - Present ICDU Angles (R,P,Y .01°)
+Terminate SCS PTC | V48E -> V48E - Load DAP (R03)
+Terminate SCS PTC | V24E -> V24E - Load Component 1&2
+Terminate SCS PTC | V46E -> V46E - Activate DAP
+Start G&N PTC | V48E -> V48E - Load DAP (R03)
+Start G&N PTC | V24E -> V24E - Load Component 1&2
+Start G&N PTC | V46E -> V46E - Activate DAP
+Start G&N PTC | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+Start G&N PTC | V49E -> V49E - Start Crew Defined MNVR(R62)
+Start G&N PTC | V25E -> V25E - Load Component 1&2&3
+Start G&N PTC | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
+Start G&N PTC | V24 N01E -> V24 N01E - Load Component 1&2 - Specify Machine Address (Fract) (.XXXXX)
+Start G&N PTC | 12E -> 12E - (program not found)
+Start G&N PTC | V24 N01E -> V24 N01E - Load Component 1&2 - Specify Machine Address (Fract) (.XXXXX)
+Start G&N PTC | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
+Start G&N PTC | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
+Terminate G&N PTC | V48E -> V48E - Load DAP (R03)
+Terminate G&N PTC | V46E -> V46E - Activate DAP
+Terminate G&N PTC | V49E -> V49E - Start Crew Defined MNVR(R62)
+Terminate G&N PTC | V25E -> V25E - Load Component 1&2&3
+DAP Deadband Change (DB 10) | V48E -> V48E - Load DAP (R03)
+DAP Deadband Change (DB 10) | V46E -> V46E - Activate DAP
+DAP Deadband Change (DB 10) | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
+P20 Rendezvous Navigation | V37E 20E -> V37E 20E - Change Prog (Major Mode) - Rendezvous Navigation
+P20 Rendezvous Navigation | V56E -> V56E - Terminate Tracking (P20)
+P20 Rendezvous Navigation | 00E -> 00E - CMC Idle
+P21 Ground Track Determination | V37E 21E -> V37E 21E - Change Prog (Major Mode) - Ground Track Determination
+P21 Ground Track Determination | V25E -> V25E - Load Component 1&2&3
+P21 Ground Track Determination | 00E -> 00E - CMC Idle
+P22 Landing Site Tracking | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
+P22 Landing Site Tracking | V22E -> V22E - Load Component 2 in R2
+P22 Landing Site Tracking | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+P22 Auto Optics | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
+P22 Auto Optics | V22E -> V22E - Load Component 2 in R2
+P22 Auto Optics | V25E -> V25E - Load Component 1&2&3
+P22 Auto Optics | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+P22 No Incorporation | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
+P22 No Incorporation | V22E -> V22E - Load Component 2 in R2
+P22 No Incorporation | V25E -> V25E - Load Component 1&2&3
+P22 No Incorporation | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+P22 Manual Optics | V37E 22E -> V37E 22E - Change Prog (Major Mode) - Orbital Navigation
+P22 Manual Optics | V22E -> V22E - Load Component 2 in R2
+P22 Manual Optics | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+P23 Optics Calibration | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Optics Calibration | V25E -> V25E - Load Component 1&2&3
+P23 Optics Calibration | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+P23 Cislunar Navigation | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Cislunar Navigation | V25E -> V25E - Load Component 1&2&3
+P23 Cislunar Navigation | 00E -> 00E - CMC Idle
+P23 Additional Mark | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Additional Mark | V25E -> V25E - Load Component 1&2&3
+P23 (N88 N89) | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 (N88 N89) | V25E -> V25E - Load Component 1&2&3
+P23 (N88 N89) | V25E -> V25E - Load Component 1&2&3
+P23 (N88 N89) | 00E -> 00E - CMC Idle
+P23 Addl Mark (N88 N89) | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Addl Mark (N88 N89) | V25E -> V25E - Load Component 1&2&3
+P23 Addl Mark (N88 N89) | V25E -> V25E - Load Component 1&2&3
+P23 Cislunar Navigation (N89) | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Cislunar Navigation (N89) | V25E -> V25E - Load Component 1&2&3
+P23 Cislunar Navigation (N89) | V25E -> V25E - Load Component 1&2&3
+P23 Cislunar Navigation (N89) | 00E -> 00E - CMC Idle
+P23 Additional Mark (N89) | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Additional Mark (N89) | V25E -> V25E - Load Component 1&2&3
+P23 Additional Mark (N89) | V25E -> V25E - Load Component 1&2&3
+P23 Cislunar Navigation (N88) | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Cislunar Navigation (N88) | V25E -> V25E - Load Component 1&2&3
+P23 Cislunar Navigation (N88) | V25E -> V25E - Load Component 1&2&3
+P23 Cislunar Navigation (N88) | 00E -> 00E - CMC Idle
+P23 Additional Mark (N88) | V37E 23E -> V37E 23E - Change Prog (Major Mode) - Optics Calibration / Cislunar Midcourse Nav. Meas.
+P23 Additional Mark (N88) | V25E -> V25E - Load Component 1&2&3
+P23 Additional Mark (N88) | V25E -> V25E - Load Component 1&2&3
+P30 External DV | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External ?V
+P30 External DV | 00E -> 00E - CMC Idle
+P37 Return to Earth | V37E 37E -> V37E 37E - Change Prog (Major Mode) - Return to Earth
+P37 Return to Earth | V22E -> V22E - Load Component 2 in R2
+P37 Return to Earth | V23E -> V23E - Load Component 3 in R3
+P37 Return to Earth | 00E -> 00E - CMC Idle
+P37 Return to Earth -MA | V37E 37E -> V37E 37E - Change Prog (Major Mode) - Return to Earth
+P37 Return to Earth -MA | V22E -> V22E - Load Component 2 in R2
+P37 Return to Earth -MA | V23E -> V23E - Load Component 3 in R3
+P37 Return to Earth -MA | 00E -> 00E - CMC Idle
+P40 SPS Thrusting | V48E -> V48E - Load DAP (R03)
+P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
+P40 SPS Thrusting | ABC02E -> ABC02E - (program not found)
+P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
+P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
+P40 SPS Thrusting | V46E -> V46E - Activate DAP
+P40 SPS Thrusting | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+P40 SPS Thrusting | V62E -> V62E - Display total att error (N22-N20)
+P40 SPS Thrusting | V49E -> V49E - Start Crew Defined MNVR(R62)
+P40 SPS Thrusting | V25E -> V25E - Load Component 1&2&3
+P40 SPS Thrusting | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+P40 SPS Thrusting | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
+P40 SPS Thrusting | V82E -> V82E - Start Orbit Param Disp (R30)
+P40 SPS Thrusting | 00E -> 00E - CMC Idle
+P41 RCS Thrusting | V48E -> V48E - Load DAP (R03)
+P41 RCS Thrusting | V24E -> V24E - Load Component 1&2
+P41 RCS Thrusting | ABC02E -> ABC02E - (program not found)
+P41 RCS Thrusting | V24E -> V24E - Load Component 1&2
+P41 RCS Thrusting | V46E -> V46E - Activate DAP
+P41 RCS Thrusting | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+P41 RCS Thrusting | V62E -> V62E - Display total att error (N22-N20)
+P41 RCS Thrusting | V49E -> V49E - Start Crew Defined MNVR(R62)
+P41 RCS Thrusting | V25E -> V25E - Load Component 1&2&3
+P41 RCS Thrusting | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+P41 RCS Thrusting | V37E 41E -> V37E 41E - Change Prog (Major Mode) - RCS Thrusting
+P41 RCS Thrusting | V82E -> V82E - Start Orbit Param Disp (R30)
+P41 RCS Thrusting | 00E -> 00E - CMC Idle
+P51 IMU Orientation | V37E 51E -> V37E 51E - Change Prog (Major Mode) - IMU Orientation
+P51 IMU Orientation | V21E -> V21E - Load Component 1 in R1
+P51 IMU Orientation | V21E -> V21E - Load Component 1 in R1
+P51 IMU Orientation | 00E -> 00E - CMC Idle
+P51 IMU Orientation (Bad Angle) | V32 -> V32 - Recycle Prog
+P51 IMU Orientation (Bad Angle) | V21E -> V21E - Load Component 1 in R1
+P51 IMU Orientation (Bad Angle) | V21E -> V21E - Load Component 1 in R1
+P52 IMU Star Check | V21E -> V21E - Load Component 1 in R1
+P52 IMU Star Check | V34E -> V34E - Terminate Function
+P52 IMU Realign (Preferred) | V37E 52E -> V37E 52E - Change Prog (Major Mode) - IMU Realign
+P52 IMU Realign (Preferred) | V22E -> V22E - Load Component 2 in R2
+P52 IMU Realign (Preferred) | 00E -> 00E - CMC Idle
+P52 IMU Realign (Nominal) | V37E 52E -> V37E 52E - Change Prog (Major Mode) - IMU Realign
+P52 IMU Realign (Nominal) | V22E -> V22E - Load Component 2 in R2
+P52 IMU Realign (Nominal) | V25E -> V25E - Load Component 1&2&3
+P52 IMU Realign (Nominal) | 00E -> 00E - CMC Idle
+P52 IMU Realign (REFSMMAT) | V37E 52E -> V37E 52E - Change Prog (Major Mode) - IMU Realign
+P52 IMU Realign (REFSMMAT) | V22E -> V22E - Load Component 2 in R2
+P52 IMU Realign (REFSMMAT) | 00E -> 00E - CMC Idle
+P52 IMU Realign (Bad Angle) | V32 -> V32 - Recycle Prog
+P76 Target dV | V37E 76E -> V37E 76E - Change Prog (Major Mode) - Target ?V
+SCS Attitude Ref Comp Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+SCS Attitude Ref Comp Check | V06 N20E (ICDU angles) -> V06 N20E (ICDU angles) - Display Decimal - Present ICDU Angles (R,P,Y .01°)
+SCS Attitude Ref Comp Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+ORDEAL Initialization | V83E -> V83E - Start REND Param Display (R31)
+SPS Evasive Maneuver | V49E -> V49E - Start Crew Defined MNVR(R62)
+SPS Evasive Maneuver | V25E -> V25E - Load Component 1&2&3
+SPS Evasive Maneuver | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+SPS Evasive Maneuver | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
+SPS Evasive Maneuver | V82E -> V82E - Start Orbit Param Disp (R30)
+SPS Evasive Maneuver | 00E -> 00E - CMC Idle
+SPS Evasive Maneuver | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-1 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-1 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-1 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-2 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-2 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-2 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-3 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-3 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-3 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-4 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-4 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-4 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
+LOI-1 | V66E -> V66E - Set CSM State Vector into LM State Vector
+LOI-1 | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External ?V
+LOI-1 | 00E -> 00E - CMC Idle
+LOI-1 | V48E -> V48E - Load DAP (R03)
+LOI-1 | V24E -> V24E - Load Component 1&2
+LOI-1 | V24E -> V24E - Load Component 1&2
+LOI-1 | V24E -> V24E - Load Component 1&2
+LOI-1 | V46E -> V46E - Activate DAP
+LOI-1 | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+LOI-1 | V62E -> V62E - Display total att error (N22-N20)
+LOI-1 | V49E -> V49E - Start Crew Defined MNVR(R62)
+LOI-1 | V25E -> V25E - Load Component 1&2&3
+LOI-1 | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+LOI-1 | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
+LOI-1 | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+LOI-1 | V37E 30E -> V37E 30E - Change Prog (Major Mode) - External ?V
+LOI-1 | 00E -> 00E - CMC Idle
+LOI-1 | V62E -> V62E - Display total att error (N22-N20)
+LOI-1 | V49E -> V49E - Start Crew Defined MNVR(R62)
+LOI-1 | V25E -> V25E - Load Component 1&2&3
+LOI-1 | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+LOI-1 | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
+LOI-1 | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
+LOI-1 | V82E -> V82E - Start Orbit Param Disp (R30)
+LOI-1 | 00E -> 00E - CMC Idle
+LOI-1 | V66E -> V66E - Set CSM State Vector into LM State Vector
+LOI-2 | V66E -> V66E - Set CSM State Vector into LM State Vector
+LOI-2 | V62E -> V62E - Display total att error (N22-N20)
+LOI-2 | V49E -> V49E - Start Crew Defined MNVR(R62)
+LOI-2 | V25E -> V25E - Load Component 1&2&3
+LOI-2 | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
+LOI-2 | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+LOI-2 | V48E -> V48E - Load DAP (R03)
+LOI-2 | V24E -> V24E - Load Component 1&2
+LOI-2 | V21E -> V21E - Load Component 1 in R1
+LOI-2 | V24E -> V24E - Load Component 1&2
+LOI-2 | V46E -> V46E - Activate DAP
+LOI-2 | V82E -> V82E - Start Orbit Param Disp (R30)
+LOI-2 | 00E -> 00E - CMC Idle
+LOI-2 | V66E -> V66E - Set CSM State Vector into LM State Vector
+SM RCS Separation Burn | V37E 41E -> V37E 41E - Change Prog (Major Mode) - RCS Thrusting
+SM RCS Separation Burn | V82E -> V82E - Start Orbit Param Disp (R30)
+SM RCS Separation Burn | 00E -> 00E - CMC Idle
+Plane Change | V37E 21E -> V37E 21E - Change Prog (Major Mode) - Ground Track Determination
+Plane Change | V25E -> V25E - Load Component 1&2&3
+Plane Change | V32E (Increment GET 10 Min) -> V32E (Increment GET 10 Min) - Recycle Prog
+Plane Change | 00E -> 00E - CMC Idle
+Plane Change | V64E -> V64E - Start S-band ant routine (R05)
+Plane Change | V48E -> V48E - Load DAP (R03)
+Plane Change | V24E -> V24E - Load Component 1&2
+Plane Change | V21E -> V21E - Load Component 1 in R1
+Plane Change | V24E -> V24E - Load Component 1&2
+Plane Change | V46E -> V46E - Activate DAP
+Plane Change | V62E -> V62E - Display total att error (N22-N20)
+Plane Change | V49E -> V49E - Start Crew Defined MNVR(R62)
+Plane Change | V25E -> V25E - Load Component 1&2&3
+Plane Change | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+Plane Change | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
+Plane Change | V82E -> V82E - Start Orbit Param Disp (R30)
+Plane Change | 00E -> 00E - CMC Idle
+Plane Change Scrubbed | V64E -> V64E - Start S-band ant routine (R05)
+TEI | V66E -> V66E - Set CSM State Vector into LM State Vector
+TEI | V62E -> V62E - Display total att error (N22-N20)
+TEI | V49E -> V49E - Start Crew Defined MNVR(R62)
+TEI | V25E -> V25E - Load Component 1&2&3
+TEI | V48E -> V48E - Load DAP (R03)
+TEI | V24E -> V24E - Load Component 1&2
+TEI | V21E -> V21E - Load Component 1 in R1
+TEI | V24E -> V24E - Load Component 1&2
+TEI | V46E -> V46E - Activate DAP
+TEI | V37E 40E -> V37E 40E - Change Prog (Major Mode) - SPS Thrusting
+TEI | V41 N91E -> V41 N91E - Coarse Align CDU (N20 & N91) - OCDU Angles Shaft (R1) Trunnion (R2) (.01° .001°)
+TEI | V82E -> V82E - Start Orbit Param Disp (R30)
+TEI | 00E -> 00E - CMC Idle
+TEI | V48E -> V48E - Load DAP (R03)
+TEI | V66E -> V66E - Set CSM State Vector into LM State Vector
+TEI | V64E -> V64E - Start S-band ant routine (R05)
+MCC-5 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-5 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-5 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-6 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-6 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-6 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-7 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-7 | V66E -> V66E - Set CSM State Vector into LM State Vector
+MCC-7 Scrubbed | V66E -> V66E - Set CSM State Vector into LM State Vector
+
