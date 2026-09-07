@@ -89,7 +89,7 @@ Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector
 Repeat for each .bas file you want to run to annotate the checklist.
 Important: Be sure to remove the macro modules you created from the checklist file once you are done as the original file did not have macros in it.
 
-I have a modified CSM and LM checklist in each directory for you to view and try in NASSP by pasting it into this path on your commputer:
+I have a modified CSM and LM checklist in each directory for you to view and try in NASSP by pasting it into this path on your computer:
 "Orbiter\Doc\Project Apollo - NASSP\Checklists"
 
 At the end of the day, this is just a "problem in search of a solution" exercise I gave myself that I thought I would share and try to contribute to the NASSP community in whatever small way I can.  
