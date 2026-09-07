@@ -39,6 +39,8 @@ Undocking | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
 Undocking | V62E -> V62E - Display Total Attitude Error
 Undocking | V48E -> V48E - Load DAP Data (R03)
 Undocking | V21E -> V21E - Load Component 1 in R1
+Undocking | 21102E -> 21102E - CFG=2=DESCENT | XTRANS=1=RCS B | ACA=1=Normal 20°/sec | DB=0=0.3° | RATE=2=2.0°/sec
+Undocking | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 Undocking | V34E -> V34E - Terminate
 Undocking | V37E 47E -> V37E 47E - Change Program - ?V Monitor
 P52 IMU Realign (REFSMMAT) | V37E 52E -> V37E 52E - Change Program - IMU Realign
@@ -124,6 +126,8 @@ Lunar Surface Operations | V34E -> V34E - Terminate
 Lunar Surface Operations | 00E -> 00E - LGC Idle
 Lunar Surface Operations | V48E -> V48E - Load DAP Data (R03)
 Lunar Surface Operations | V21E -> V21E - Load Component 1 in R1
+Lunar Surface Operations | 12012E -> 12012E - CFG=1=ASCENT | XTRANS=2=RCS A&B | ACA=0=Docked 4°/sec | DB=1=5.0° | RATE=2=2.0°/sec
+Lunar Surface Operations | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 Lunar Surface Operations | V21E -> V21E - Load Component 1 in R1
 Lunar Surface Operations | V37E 12E -> V37E 12E - Change Program - Powered Ascent
 Lunar Surface Operations | V37E 00E -> V37E 00E - Change Program - LGC Idle
@@ -164,6 +168,8 @@ Lunar Liftoff | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R
 Lunar Liftoff | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 Lunar Liftoff | V48E -> V48E - Load DAP Data (R03)
 Lunar Liftoff | V21E -> V21E - Load Component 1 in R1
+Lunar Liftoff | 12012E -> 12012E - CFG=1=ASCENT | XTRANS=2=RCS A&B | ACA=0=Docked 4°/sec | DB=1=5.0° | RATE=2=2.0°/sec
+Lunar Liftoff | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 Lunar Liftoff | V21E -> V21E - Load Component 1 in R1
 Lunar Liftoff | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
 Lunar Liftoff | V37E 12E -> V37E 12E - Change Program - Powered Ascent
@@ -174,12 +180,16 @@ Lunar Liftoff | V82E -> V82E - Request Orbit Parameter Display (R30)
 Lunar Liftoff | 00E -> 00E - LGC Idle
 Rendezvous | V48E -> V48E - Load DAP Data (R03)
 Rendezvous | V21E -> V21E - Load Component 1 in R1
+Rendezvous | 11002E -> 11002E - CFG=1=ASCENT | XTRANS=1=RCS B | ACA=0=Docked 4°/sec | DB=0=0.3° | RATE=2=2.0°/sec
+Rendezvous | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 Rendezvous | V34E -> V34E - Terminate
 Rendezvous | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
 Rendezvous | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
 Rendezvous | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 Rendezvous | V48E -> V48E - Load DAP Data (R03)
 Rendezvous | V21E -> V21E - Load Component 1 in R1
+Rendezvous | 11012E -> 11012E - CFG=1=ASCENT | XTRANS=1=RCS B | ACA=0=Docked 4°/sec | DB=1=5.0° | RATE=2=2.0°/sec
+Rendezvous | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 Rendezvous | V34E -> V34E - Terminate
 Rendezvous | V95E -> V95E - Inhibit State Vector Update (P20 or P22)
 Rendezvous | V67E (Reset W Matrix) -> V67E (Reset W Matrix) - W-Matrix Monitor
@@ -252,6 +262,8 @@ CSM Active Docking | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Ang
 CSM Active Docking | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 CSM Active Docking | V48E -> V48E - Load DAP Data (R03)
 CSM Active Docking | V21E -> V21E - Load Component 1 in R1
+CSM Active Docking | 11011E -> 11011E - CFG=1=ASCENT | XTRANS=1=RCS B | ACA=0=Docked 4°/sec | DB=1=5.0° | RATE=1=0.5°/sec
+CSM Active Docking | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 CSM Active Docking | V24E -> V24E - Load Component 1&2
 CSM Active Docking | V37E 00E -> V37E 00E - Change Program - LGC Idle
 CSM Active Docking | V76E -> V76E - Set Min Impulse Mode in DAP
@@ -293,6 +305,8 @@ PGNS Turn-On & Self Test | 10E -> 10E - (program not found)
 PGNS Turn-On & Self Test | V21 N27E -> V21 N27E - Load Component 1 in R1 - Self Test ON/OFF (Octal)
 DAP Set, Gimbal Throttle Test | V48E -> V48E - Load DAP Data (R03)
 DAP Set, Gimbal Throttle Test | V21E -> V21E - Load Component 1 in R1
+DAP Set, Gimbal Throttle Test | 32012E -> 32012E - CFG=3=DOCKED | XTRANS=2=RCS A&B | ACA=0=Docked 4°/sec | DB=1=5.0° | RATE=2=2.0°/sec
+DAP Set, Gimbal Throttle Test | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 DAP Set, Gimbal Throttle Test | V24E -> V24E - Load Component 1&2
 DAP Set, Gimbal Throttle Test | V24E -> V24E - Load Component 1&2
 RNDZ RDR Self Test | V25 N07E -> V25 N07E - Load Component 1&2&3 - Flag Word Operator, R1=ECADR, R2=BIT ID, R3=Action (Octal)
@@ -330,6 +344,7 @@ P30 External dV | V37E 30E -> V37E 30E - Change Program - External ?V
 P30 External dV | 00E -> 00E - LGC Idle
 P40 DPS Thrusting | V48E -> V48E - Load DAP Data (R03)
 P40 DPS Thrusting | V21E -> V21E - Load Component 1 in R1
+P40 DPS Thrusting | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 P40 DPS Thrusting | V24E -> V24E - Load Component 1&2
 P40 DPS Thrusting | V34E -> V34E - Terminate
 P40 DPS Thrusting | V37E 00E -> V37E 00E - Change Program - LGC Idle
@@ -337,6 +352,7 @@ P40 DPS Thrusting | V37E 40E -> V37E 40E - Change Program - DPS (Descent Propuls
 P40 DPS Thrusting | 00E -> 00E - LGC Idle
 P41 RCS Thrusting | V48E -> V48E - Load DAP Data (R03)
 P41 RCS Thrusting | V21E -> V21E - Load Component 1 in R1
+P41 RCS Thrusting | V21E - Load Component 1 in R1 -> V21E - Load Component 1 in R1 - Load Component 1 in R1
 P41 RCS Thrusting | V24E -> V24E - Load Component 1&2
 P41 RCS Thrusting | V34E -> V34E - Terminate
 P41 RCS Thrusting | V37E 00E -> V37E 00E - Change Program - LGC Idle

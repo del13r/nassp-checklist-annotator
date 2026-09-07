@@ -232,7 +232,6 @@ CMC Self Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 CMC Self Check | V25 N01E -> V25 N01E - Load Component 1&2&3 - Specify Machine Address (Fract) (.XXXXX)
 CMC Self Check | V15 N01E -> V15 N01E - Monitor Octal Comp 1,2&3 - Specify Machine Address (Fract) (.XXXXX)
 CMC Self Check | V21 N27E -> V21 N27E - Load Component 1 in R1 - Self-Test on/off sw
-CMC Self Check | 10E -> 10E - (program not found)
 CMC Self Check | V21 N27E -> V21 N27E - Load Component 1 in R1 - Self-Test on/off sw
 CMC Self Check | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
 DSKY Condition Lights Test | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
@@ -287,7 +286,6 @@ Start G&N PTC | V49E -> V49E - Start Crew Defined MNVR(R62)
 Start G&N PTC | V25E -> V25E - Load Component 1&2&3
 Start G&N PTC | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
 Start G&N PTC | V24 N01E -> V24 N01E - Load Component 1&2 - Specify Machine Address (Fract) (.XXXXX)
-Start G&N PTC | 12E -> 12E - (program not found)
 Start G&N PTC | V24 N01E -> V24 N01E - Load Component 1&2 - Specify Machine Address (Fract) (.XXXXX)
 Start G&N PTC | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
 Start G&N PTC | V21 N01E -> V21 N01E - Load Component 1 in R1 - Specify Machine Address (Fract) (.XXXXX)
@@ -360,7 +358,6 @@ P37 Return to Earth -MA | 00E -> 00E - CMC Idle
 P40 SPS Thrusting | V48E -> V48E - Load DAP (R03)
 P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
 P40 SPS Thrusting | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
-P40 SPS Thrusting | ABC02E -> ABC02E - (program not found)
 P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
 P40 SPS Thrusting | V24E -> V24E - Load Component 1&2
 P40 SPS Thrusting | V46E -> V46E - Activate DAP
@@ -375,7 +372,6 @@ P40 SPS Thrusting | 00E -> 00E - CMC Idle
 P41 RCS Thrusting | V48E -> V48E - Load DAP (R03)
 P41 RCS Thrusting | V24E -> V24E - Load Component 1&2
 P41 RCS Thrusting | V24E - Load Component 1&2 -> V24E - Load Component 1&2 - Load Component 1&2
-P41 RCS Thrusting | ABC02E -> ABC02E - (program not found)
 P41 RCS Thrusting | V24E -> V24E - Load Component 1&2
 P41 RCS Thrusting | V46E -> V46E - Activate DAP
 P41 RCS Thrusting | V37E 00E -> V37E 00E - Change Prog (Major Mode) - CMC Idle
