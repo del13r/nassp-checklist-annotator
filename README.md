@@ -7,14 +7,14 @@ At first, it was just a simple manual find/replace action in excel which got ver
 I was now in search of a way to automate the find/replace action in excel with a view of one day applying these annotations to any NASSP mission that has XLS checklists.
 
 Here is the approach I settled on for CSM:
-Build a dictionary file with all of the CSM Verb/Noun/Program codes and descriptions that Mike Collins had with him in the CSM on Apollo 11.
+Build a dictionary file with all of the CSM Verb/Noun/Program codes and descriptions that the CMP had in the CSM.
 
 CSM Source:
 Apollo 11 CSM Operations Checklist SKB32I00080-307 found at:  
 https://www.apollojournals.org/afj/ap11fj/a11-csmocindex.html
 
 Here is the approach I settled on for LM:
-Build a dictionary file with all of the LM Verb/Noun/Program/DEDA codes and descriptions that Neil and Buzz had with them in the LM on Apollo 11.
+Build a dictionary file with all of the LM Verb/Noun/Program/DEDA codes and descriptions that the LMP and CDR had in the LM.
 
 LM Source:
 APOLLO XI LM-5 FLIGHT CREW G&N DICTIONARY  
