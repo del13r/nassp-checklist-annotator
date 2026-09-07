@@ -71,7 +71,7 @@ Sub DSKY_Inputs_Only()
                 txt = Trim(cell.Value)
 
                 '===========================================================
-                ' CSM DAP R1 / R2 DECODING (trigger ONLY at first preamble)
+                ' STRICT DAP BLOCK — ONLY AT FIRST PREAMBLE
                 '===========================================================
                 If txt = "DSKY V 4 8 E" And _
                    Trim(ws.Cells(cell.Row + 1, "I").Value) = "DSKY V 2 4 E" Then
@@ -85,44 +85,42 @@ Sub DSKY_Inputs_Only()
                     Dim originalA As String
 
                     '--------------------------------------------------------
-                    ' Annotate V48 itself (verb-only)
+                    ' Annotate V48 (verb-only)
                     '--------------------------------------------------------
                     lastRow = verbWS.Cells(verbWS.Rows.Count, 2).End(xlUp).Row
                     Set found = verbWS.Range("B2:B" & lastRow).Find("48", LookIn:=xlValues, LookAt:=xlWhole)
                     If Not found Is Nothing Then
                         verbDesc = found.Offset(0, 1).Value
-                    Else
-                        verbDesc = "(verb 48 not found)"
+                        originalA = ws.Cells(cell.Row, "A").Value
+                        ws.Cells(cell.Row, "A").Value = originalA & " - " & verbDesc
+                        logText = logText & ws.Name & " | " & originalA & " -> " & ws.Cells(cell.Row, "A").Value & vbCrLf
                     End If
-
-                    originalA = ws.Cells(cell.Row, "A").Value
-                    ws.Cells(cell.Row, "A").Value = originalA & " - " & verbDesc
-                    logText = logText & ws.Name & " | " & originalA & " -> " & ws.Cells(cell.Row, "A").Value & vbCrLf
 
                     '--------------------------------------------------------
                     ' Annotate V24 (verb-only)
                     '--------------------------------------------------------
-                    lastRow = verbWS.Cells(verbWS.Rows.Count, 2).End(xlUp).Row
                     Set found = verbWS.Range("B2:B" & lastRow).Find("24", LookIn:=xlValues, LookAt:=xlWhole)
                     If Not found Is Nothing Then
                         verbDesc = found.Offset(0, 1).Value
-                    Else
-                        verbDesc = "(verb 24 not found)"
+                        originalA = ws.Cells(cell.Row + 1, "A").Value
+                        ws.Cells(cell.Row + 1, "A").Value = originalA & " - " & verbDesc
+                        logText = logText & ws.Name & " | " & originalA & " -> " & ws.Cells(cell.Row + 1, "A").Value & vbCrLf
                     End If
 
-                    originalA = ws.Cells(cell.Row + 1, "A").Value
-                    ws.Cells(cell.Row + 1, "A").Value = originalA & " - " & verbDesc
-                    logText = logText & ws.Name & " | " & originalA & " -> " & ws.Cells(cell.Row + 1, "A").Value & vbCrLf
-
                     '--------------------------------------------------------
-                    ' R1 DAP (row +2)
+                    ' R1 DAP (strict)
                     '--------------------------------------------------------
                     r1Line = Trim(ws.Cells(cell.Row + 2, "I").Value)
                     parts = Split(Application.Trim(r1Line), " ")
 
-                    If UBound(parts) < 6 Then GoTo NextCell
+                    ' Must be exactly 7 tokens: DSKY + 5 digits + E
+                    If UBound(parts) <> 6 Then GoTo NextCell
+                    If parts(0) <> "DSKY" Then GoTo NextCell
+                    If parts(6) <> "E" Then GoTo NextCell
 
+                    ' Must be numeric digits
                     For i = 1 To 5
+                        If Not IsNumeric(parts(i)) Then GoTo NextCell
                         d(i) = parts(i)
                     Next i
 
@@ -130,11 +128,8 @@ Sub DSKY_Inputs_Only()
 
                     For i = 1 To 5
                         Set fDAP = wsR1DAP.Columns("A").Find(d(i), LookIn:=xlValues, LookAt:=xlWhole)
-                        If Not fDAP Is Nothing Then
-                            annotationDAP = annotationDAP & fDAP.Offset(0, i).Value
-                        Else
-                            annotationDAP = annotationDAP & "INVALID"
-                        End If
+                        If fDAP Is Nothing Then GoTo NextCell
+                        annotationDAP = annotationDAP & fDAP.Offset(0, i).Value
                         If i < 5 Then annotationDAP = annotationDAP & " | "
                     Next i
 
@@ -143,30 +138,26 @@ Sub DSKY_Inputs_Only()
                     logText = logText & ws.Name & " | " & originalA & " -> " & ws.Cells(cell.Row + 2, "A").Value & vbCrLf
 
                     '--------------------------------------------------------
-                    ' R2 DAP (row +3)
+                    ' R2 DAP (strict)
                     '--------------------------------------------------------
                     r2Line = Trim(ws.Cells(cell.Row + 3, "I").Value)
                     parts = Split(Application.Trim(r2Line), " ")
 
-                    If UBound(parts) < 6 Then GoTo NextCell
+                    If UBound(parts) <> 6 Then GoTo NextCell
+                    If parts(0) <> "DSKY" Then GoTo NextCell
+                    If parts(6) <> "E" Then GoTo NextCell
 
                     For i = 1 To 5
+                        If parts(i) <> "0" And parts(i) <> "1" Then GoTo NextCell
                         d(i) = parts(i)
                     Next i
 
                     annotationDAP = ""
 
                     For i = 1 To 5
-                        If d(i) = "0" Or d(i) = "1" Then
-                            Set fDAP = wsR2DAP.Columns("A").Find(d(i), LookIn:=xlValues, LookAt:=xlWhole)
-                            If Not fDAP Is Nothing Then
-                                annotationDAP = annotationDAP & fDAP.Offset(0, i).Value
-                            Else
-                                annotationDAP = annotationDAP & "INVALID"
-                            End If
-                        Else
-                            annotationDAP = annotationDAP & "INVALID R2 DIGIT"
-                        End If
+                        Set fDAP = wsR2DAP.Columns("A").Find(d(i), LookIn:=xlValues, LookAt:=xlWhole)
+                        If fDAP Is Nothing Then GoTo NextCell
+                        annotationDAP = annotationDAP & fDAP.Offset(0, i).Value
                         If i < 5 Then annotationDAP = annotationDAP & " | "
                     Next i
 
@@ -178,33 +169,23 @@ Sub DSKY_Inputs_Only()
                 End If
 
                 '===========================================================
-                ' CASE 1 — PROGRAM ENTRY: DSKY X X E   (FIXED)
+                ' EVERYTHING BELOW HERE = ORIGINAL BEHAVIOR
                 '===========================================================
+
+                ' PROGRAM ENTRY
                 re.Pattern = "^DSKY\s+(\d)\s+(\d)\s+E$"
-
                 If re.Test(txt) Then
-
                     Set matches = re.Execute(txt)
                     progCode = matches(0).SubMatches(0) & matches(0).SubMatches(1)
 
                     lastRow = progWS.Cells(progWS.Rows.Count, 1).End(xlUp).Row
                     Set found = progWS.Range("A2:A" & lastRow).Find(progCode, LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then
-                        progDesc = found.Offset(0, 1).Value
-                    Else
-                        progDesc = "(program not found)"
-                    End If
+                    If found Is Nothing Then GoTo NextCell
 
-                    descOnly = progDesc
-                    codeText = progCode & "E"
+                    progDesc = found.Offset(0, 1).Value
 
                     beforeText = ws.Cells(cell.Row, "A").Value
-
-                    If Trim(beforeText) = "" Then
-                        afterText = codeText & " - " & descOnly
-                    Else
-                        afterText = beforeText & " - " & descOnly
-                    End If
+                    afterText = beforeText & " - " & progDesc
 
                     ws.Cells(cell.Row, "A").Value = afterText
                     logText = logText & ws.Name & " | " & beforeText & " -> " & afterText & vbCrLf
@@ -212,34 +193,27 @@ Sub DSKY_Inputs_Only()
                     GoTo NextCell
                 End If
 
-                '===========================================================
-                ' CASE 2 — PROGRAM CALL: DSKY V 3 7 E X X E
-                '===========================================================
+                ' PROGRAM CALL
                 re.Pattern = "^DSKY\s+V\s+3\s+7\s+E\s+(\d)\s+(\d)\s+E$"
-
                 If re.Test(txt) Then
-
                     Set matches = re.Execute(txt)
                     progCode = matches(0).SubMatches(0) & matches(0).SubMatches(1)
 
                     lastRow = verbWS.Cells(verbWS.Rows.Count, 2).End(xlUp).Row
                     Set found = verbWS.Range("B2:B" & lastRow).Find("37", LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then verbDesc = found.Offset(0, 1).Value Else verbDesc = "(verb 37 not found)"
+                    If found Is Nothing Then GoTo NextCell
+                    verbDesc = found.Offset(0, 1).Value
 
                     lastRow = progWS.Cells(progWS.Rows.Count, 1).End(xlUp).Row
                     Set found = progWS.Range("A2:A" & lastRow).Find(progCode, LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then progDesc = found.Offset(0, 1).Value Else progDesc = "(program not found)"
+                    If found Is Nothing Then GoTo NextCell
+                    progDesc = found.Offset(0, 1).Value
 
                     codeText = "V37E " & progCode & "E"
                     descOnly = verbDesc & " - " & progDesc
 
                     beforeText = ws.Cells(cell.Row, "A").Value
-
-                    If Trim(beforeText) = "" Then
-                        afterText = codeText & " - " & descOnly
-                    Else
-                        afterText = beforeText & " - " & descOnly
-                    End If
+                    afterText = beforeText & " - " & descOnly
 
                     ws.Cells(cell.Row, "A").Value = afterText
                     logText = logText & ws.Name & " | " & beforeText & " -> " & afterText & vbCrLf
@@ -247,30 +221,23 @@ Sub DSKY_Inputs_Only()
                     GoTo NextCell
                 End If
 
-                '===========================================================
-                ' CASE 3 — VERB + NOUN: DSKY V X X N X X E
-                '===========================================================
+                ' VERB + NOUN
                 re.Pattern = "^DSKY\s+V\s+(\d)\s+(\d)\s+N\s+(\d)\s+(\d)\s+E$"
-
                 If re.Test(txt) Then
-
                     Set matches = re.Execute(txt)
                     verbCode = matches(0).SubMatches(0) & matches(0).SubMatches(1)
                     nounCode = matches(0).SubMatches(2) & matches(0).SubMatches(3)
 
                     lastRow = verbWS.Cells(verbWS.Rows.Count, 2).End(xlUp).Row
                     Set found = verbWS.Range("B2:B" & lastRow).Find(verbCode, LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then verbDesc = found.Offset(0, 1).Value Else verbDesc = "(verb not found)"
+                    If found Is Nothing Then GoTo NextCell
+                    verbDesc = found.Offset(0, 1).Value
 
                     lastRow = nounWS.Cells(nounWS.Rows.Count, 1).End(xlUp).Row
                     Set found = nounWS.Range("A2:A" & lastRow).Find(nounCode, LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then
-                        nounDesc = found.Offset(0, 1).Value
-                        nounScale = found.Offset(0, 2).Value
-                    Else
-                        nounDesc = "(noun not found)"
-                        nounScale = ""
-                    End If
+                    If found Is Nothing Then GoTo NextCell
+                    nounDesc = found.Offset(0, 1).Value
+                    nounScale = found.Offset(0, 2).Value
 
                     codeText = "V" & verbCode & "E N" & nounCode & "E"
 
@@ -281,12 +248,7 @@ Sub DSKY_Inputs_Only()
                     End If
 
                     beforeText = ws.Cells(cell.Row, "A").Value
-
-                    If Trim(beforeText) = "" Then
-                        afterText = codeText & " - " & descOnly
-                    Else
-                        afterText = beforeText & " - " & descOnly
-                    End If
+                    afterText = beforeText & " - " & descOnly
 
                     ws.Cells(cell.Row, "A").Value = afterText
                     logText = logText & ws.Name & " | " & beforeText & " -> " & afterText & vbCrLf
@@ -294,30 +256,22 @@ Sub DSKY_Inputs_Only()
                     GoTo NextCell
                 End If
 
-                '===========================================================
-                ' CASE 4 — VERB-ONLY: DSKY V X X E
-                '===========================================================
+                ' VERB ONLY
                 re.Pattern = "^DSKY\s+V\s+(\d)\s+(\d)\s+E$"
-
                 If re.Test(txt) Then
-
                     Set matches = re.Execute(txt)
                     verbCode = matches(0).SubMatches(0) & matches(0).SubMatches(1)
 
                     lastRow = verbWS.Cells(verbWS.Rows.Count, 2).End(xlUp).Row
                     Set found = verbWS.Range("B2:B" & lastRow).Find(verbCode, LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then verbDesc = found.Offset(0, 1).Value Else verbDesc = "(verb not found)"
+                    If found Is Nothing Then GoTo NextCell
+                    verbDesc = found.Offset(0, 1).Value
 
                     codeText = "V" & verbCode & "E"
                     descOnly = verbDesc
 
                     beforeText = ws.Cells(cell.Row, "A").Value
-
-                    If Trim(beforeText) = "" Then
-                        afterText = codeText & " - " & descOnly
-                    Else
-                        afterText = beforeText & " - " & descOnly
-                    End If
+                    afterText = beforeText & " - " & descOnly
 
                     ws.Cells(cell.Row, "A").Value = afterText
                     logText = logText & ws.Name & " | " & beforeText & " -> " & afterText & vbCrLf
@@ -325,25 +279,17 @@ Sub DSKY_Inputs_Only()
                     GoTo NextCell
                 End If
 
-                '===========================================================
-                ' CASE 5 — NOUN-ONLY: DSKY N X X E
-                '===========================================================
+                ' NOUN ONLY
                 re.Pattern = "^DSKY\s+N\s+(\d)\s+(\d)\s+E$"
-
                 If re.Test(txt) Then
-
                     Set matches = re.Execute(txt)
                     nounCode = matches(0).SubMatches(0) & matches(0).SubMatches(1)
 
                     lastRow = nounWS.Cells(nounWS.Rows.Count, 1).End(xlUp).Row
                     Set found = nounWS.Range("A2:A" & lastRow).Find(nounCode, LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then
-                        nounDesc = found.Offset(0, 1).Value
-                        nounScale = found.Offset(0, 2).Value
-                    Else
-                        nounDesc = "(noun not found)"
-                        nounScale = ""
-                    End If
+                    If found Is Nothing Then GoTo NextCell
+                    nounDesc = found.Offset(0, 1).Value
+                    nounScale = found.Offset(0, 2).Value
 
                     codeText = "N" & nounCode & "E"
 
@@ -354,12 +300,7 @@ Sub DSKY_Inputs_Only()
                     End If
 
                     beforeText = ws.Cells(cell.Row, "A").Value
-
-                    If Trim(beforeText) = "" Then
-                        afterText = codeText & " - " & descOnly
-                    Else
-                        afterText = beforeText & " - " & descOnly
-                    End If
+                    afterText = beforeText & " - " & descOnly
 
                     ws.Cells(cell.Row, "A").Value = afterText
                     logText = logText & ws.Name & " | " & beforeText & " -> " & afterText & vbCrLf
@@ -367,30 +308,22 @@ Sub DSKY_Inputs_Only()
                     GoTo NextCell
                 End If
 
-                '===========================================================
-                ' CASE 6 — VERB MISSING E: DSKY V X X
-                '===========================================================
+                ' VERB MISSING E
                 re.Pattern = "^DSKY\s+V\s+(\d)\s+(\d)$"
-
                 If re.Test(txt) Then
-
                     Set matches = re.Execute(txt)
                     verbCode = matches(0).SubMatches(0) & matches(0).SubMatches(1)
 
                     lastRow = verbWS.Cells(verbWS.Rows.Count, 2).End(xlUp).Row
                     Set found = verbWS.Range("B2:B" & lastRow).Find(verbCode, LookIn:=xlValues, LookAt:=xlWhole)
-                    If Not found Is Nothing Then verbDesc = found.Offset(0, 1).Value Else verbDesc = "(verb not found)"
+                    If found Is Nothing Then GoTo NextCell
+                    verbDesc = found.Offset(0, 1).Value
 
                     codeText = "V" & verbCode & "E"
                     descOnly = verbDesc
 
                     beforeText = ws.Cells(cell.Row, "A").Value
-
-                    If Trim(beforeText) = "" Then
-                        afterText = codeText & " - " & descOnly
-                    Else
-                        afterText = beforeText & " - " & descOnly
-                    End If
+                    afterText = beforeText & " - " & descOnly
 
                     ws.Cells(cell.Row, "A").Value = afterText
                     logText = logText & ws.Name & " | " & beforeText & " -> " & afterText & vbCrLf
