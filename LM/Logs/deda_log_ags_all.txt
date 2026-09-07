@@ -161,7 +161,7 @@ CSI | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
 CSI | 452 -> 452 - dVZ (LV) (+Dn) (.1fps)
 CSI | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
 CSI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
-CSI | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+CSI | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dVs to Count
 CSI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
 CDH | 400+2 -> 400+2 - Z-Body Axis Steering
 CDH | 417+1 -> 417+1 - Initialize Radar Filter
@@ -184,7 +184,7 @@ CDH | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
 CDH | 452 -> 452 - dVZ (LV) (+Dn) (.1fps)
 CDH | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
 CDH | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
-CDH | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+CDH | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dVs to Count
 CDH | 500R -> 500R - dVgx (LM) (+ Up) (.1fps)
 PC | 410+5 -> 410+5 - External dV
 PC | 450+0 -> 450+0 - dVX (LV) (+Fwd) (.1fps)
@@ -193,7 +193,7 @@ PC | 452+0 -> 452+0 - dVZ (LV) (+Dn) (.1fps)
 PC | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
 PC | 270R -> 270R - Present Vy Out-of-CSM Orbit Plane Velocity (Vyo) (.1fps)
 PC | 501R -> 501R - dVgy (LM) (+ Rt) (.1fps)
-PC | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+PC | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dVs to Count
 PC | 270R -> 270R - Present Vy Out-of-CSM Orbit Plane Velocity (Vyo) (.1fps)
 PC | 417+1 -> 417+1 - Initialize Radar Filter
 PC | 410+2 -> 410+2 - CDH Routine
@@ -225,18 +225,18 @@ TPI | 451 -> 451 - dVY (LV) (+Rt) (.1fps)
 TPI | 452 -> 452 - dVZ (LV) (+Dn) (.1fps)
 TPI | 407+0 -> 407+0 - Use Rotating External dV Reference Frame
 TPI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
-TPI | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+TPI | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dVs to Count
 TPI | 502R -> 502R - dVgz (LM) (+ Fwd) (.1fps)
 MCC1 | 404+0 -> 404+0 - dVX (Use 470 For Readout) (Octal)
 MCC1 | 405+0 -> 405+0 - dVY (Use 471 For Readout) (Octal)
 MCC1 | 406+0 -> 406+0 - dVZ (Use 472 For Readout) (Octal)
 MCC1 | 400+2 -> 400+2 - Z-Body Axis Steering
-MCC1 | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+MCC1 | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dVs to Count
 MCC1 | 472R -> 472R - dVZ Measured (LM) (+ Fwd) (Use 406 to Zero) (.1fps)
 MCC2 | 404+0 -> 404+0 - dVX (Use 470 For Readout) (Octal)
 MCC2 | 405+0 -> 405+0 - dVY (Use 471 For Readout) (Octal)
 MCC2 | 406+0 -> 406+0 - dVZ (Use 472 For Readout) (Octal)
-MCC2 | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dV’s to Count
+MCC2 | 407+1 -> 407+1 - Freeze External dV in Inertial Space and allow dVs to Count
 MCC2 | 472R -> 472R - dVZ Measured (LM) (+ Fwd) (Use 406 to Zero) (.1fps)
 AGS Activation & Self Test | 000+888888 -> 000+888888 - DEDA Display Segment Test
 AGS Activation & Self Test | 123-45679 -> 123-45679 - Sign and Sequence Logic Test
