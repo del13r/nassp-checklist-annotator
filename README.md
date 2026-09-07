@@ -10,19 +10,19 @@ Here is the approach I settled on for CSM:
 Build a dictionary file with all of the CSM Verb/Noun/Program codes and descriptions that Mike Collins had with him in the CSM on Apollo 11.
 
 CSM Source:
-Apollo 11 CSM Operations Checklist SKB32I00080-307 found at:
+Apollo 11 CSM Operations Checklist SKB32I00080-307 found at:  
 https://www.apollojournals.org/afj/ap11fj/a11-csmocindex.html
 
 Here is the approach I settled on for LM:
 Build a dictionary file with all of the LM Verb/Noun/Program/DEDA codes and descriptions that Neil and Buzz had with them in the LM on Apollo 11.
 
 LM Source:
-APOLLO XI LM-5 FLIGHT CREW G&N DICTIONARY
+APOLLO XI LM-5 FLIGHT CREW G&N DICTIONARY  
 https://www.ibiblio.org/apollo/Documents/ApolloXI_FlightCrewG&NDictionary_5-29-1969.pdf
 
 Note: For the DEDA inputs/outputs, there were some items not shown in the G&N Dictionary (less than 10), and therefore the following LM/AGS source was used to fill in any gaps:
 
-LM/AGS OPERATING MANUAL FLIGHT PROGRAM 6
+LM/AGS OPERATING MANUAL FLIGHT PROGRAM 6  
 https://apollojournals.org/alsj/LM_AGS_FP6_OperatingManual.pdf
 
 Once the respective CSM and LM dictionaries were built, I intended to be the least intrusive I could be to the source checklist files in the older XLS format.
@@ -31,57 +31,66 @@ The method I settled on was to open both my dictionary file that I created in ex
 The advantages of this approach is that the source XLS file is not excessively modified, and that the original text and annotations are retained as the original checklist dev intended.
 Also, I really do not want to be responsible for missing important existing annotations like these examples:
 
-CSM Checklist:
+CSM Checklist:  
+V75 (No Enter)  
+F 06 89 (LAT, LONG/2, ALT) (Do Not PRO)  
 
-V75 (No Enter)
-
-F 06 89 (LAT, LONG/2, ALT) (Do Not PRO)
-
-After my VBA scripts run, this is what those same cells look like:
-
-V75 (No Enter) - Backup Liftoff
-
+After my VBA scripts run, this is what those same cells look like:  
+V75 (No Enter) - Backup Liftoff  
 F 06 89 (LAT, LONG/2, ALT) (Do Not PRO) - Display Decimal - Landmark, R1=Lat (+ North), R2=Long/2 (+ East), R3=Alt (.001° .001° .01 NM)
 
-LM Checklist:
-
-223+00020 (Do Not Enter)
-
+LM Checklist:  
+223+00020 (Do Not Enter)  
 310+02600 (No Enter)
 
-After my VBA scripts run, this is what those same cells look like
-
-223+00020 (Do Not Enter) - Altitude Update Input (100 ft)
-
+After my VBA scripts run, this is what those same cells look like:  
+223+00020 (Do Not Enter) - Altitude Update Input (100 ft)  
 310+02600 (No Enter) - Targeted TFI TPI (For TPI Search Routine) (.01 min)
 
 As you can see, the only major disadvantage is that the text is longer, however personally, I would rather have more information than none, especially having units in parentheses at the end makes a big difference for me.
 In future, depending on feedback, I could potentially improve this long text by changing the VBA to only apply annotations when no original annotation exists in the checklist.
 For now, I am using the extra information as both a sanity check and to verify if the original annotation is correct.
 
-The vba scripts also create logs on your desktop of exactly what was modified in the following format.
+The vba scripts also create logs on your desktop of exactly what was modified in the following format.  
+Tab | Original text -> Original text - Annotation1 - Annotation2 (Annotation3)  
 
-Tab | Original text -> Original text - Annotation1 - Annotation2 (Annotation3)
-
-Example log lines:
-
-Flightplan | V37E 52E -> V37E 52E - Change Program - IMU Realign
-
-Flightplan | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
-
-Flightplan |   F 37 ->   F 37 - Change Program
-
-Rendezvous |   F 06 47 ->   F 06 47 - Display Decimal - R1=LM Weight, R2=CSM Weight (lbs)
-
-Flightplan | 400+0 -> 400+0 - Attitude Hold
-
-DOI | 400+1 -> 400+1 - Auto Guidance Steering
-
-Flightplan | 400+2 -> 400+2 - Z-Body Axis Steering
-
+Example log lines:  
+Flightplan | V37E 52E -> V37E 52E - Change Program - IMU Realign  
+Flightplan | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP  
+Flightplan |   F 37 ->   F 37 - Change Program  
+Rendezvous |   F 06 47 ->   F 06 47 - Display Decimal - R1=LM Weight, R2=CSM Weight (lbs)  
+Flightplan | 400+0 -> 400+0 - Attitude Hold  
+DOI | 400+1 -> 400+1 - Auto Guidance Steering  
+Flightplan | 400+2 -> 400+2 - Z-Body Axis Steering  
 DOI | 400+3 -> 400+3 - IMU Align
 
 One thing to be aware of is that where the source material uses the delta Δ character, the logs show a ?, however the XLS checklist is written with the correct delta character.
 
-Anyway, this is not a serious thing, just a "problem in search of a solution" exercise I gave to myself that I thought I would share and try to contribute to the NASSP community in whatever small way I can.
+How to run the scripts?  
+Open the CSM or LM dictionary file in excel first  
+CSM Verb and noun list.xlsx  
+Open the matching CSM or LM checklist in excel second  
+Apollo 11 Checklists.xls  
+Press Alt+F11  
+File  
+Import file  
+dsky input.bas  
+close the window  
+press Alt+F8  
+select macro with name DSKY_Inputs_Only  
+press run  
+A dialog box will notify a log has been created on the desktop  
+Open the log on the desktop to verify what was modified.
+
+Example:  
+Flightplan | V64E -> V64E - Start S-band ant routine (R05)  
+Flightplan | V66E -> V66E - Set CSM State Vector into LM State Vector  
+
+Repeat for each .bas file you want to run to annotate the checklist.
+Important: Be sure to remove the macro modules you created from the checklist file once you are done as the original file did not have macros in it.
+
+I have a modified CSM and LM checklist in each directory for you to view and try in NASSP by pasting it into this path on your commputer:
+"Orbiter\Doc\Project Apollo - NASSP\Checklists"
+
+At the end of the day, this is just a "problem in search of a solution" exercise I gave myself that I thought I would share and try to contribute to the NASSP community in whatever small way I can.  
 The goal was to try and retain the realism that NASSP has while also helping to educate the user about what inputs/outputs they are performing as they progress through the checklists.
