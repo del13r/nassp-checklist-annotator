@@ -10,8 +10,8 @@ Flightplan | 00E -> 00E - LGC Idle
 Flightplan | V76E -> V76E - Set Min Impulse Mode in DAP
 Flightplan | V63E -> V63E - Start RR/LR Self-Test
 Flightplan | V34E -> V34E - Terminate
-Flightplan | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-Flightplan | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+Flightplan | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+Flightplan | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 Flightplan | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 Flightplan | V82E -> V82E - Request Orbit Parameter Display (R30)
 Flightplan | V95E -> V95E - Inhibit State Vector Update (P20 or P22)
@@ -30,8 +30,8 @@ Flightplan | V37E 52E -> V37E 52E - Change Program - IMU Realign
 Flightplan | V22E -> V22E - Load Component 2 in R2
 Flightplan | V21E -> V21E - Load Component 1 in R1
 Flightplan | V76E -> V76E - Set Min Impulse Mode in DAP
-Flightplan | V06 N20E -> V06 N20E - Display Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
-Flightplan | N22E -> N22E - New ICDU Angles Y,P,R, (OG,IG,MG) (.01°)
+Flightplan | V06 N20E -> V06 N20E - Display Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
+Flightplan | N22E -> N22E - New ICDU Angles Y,P,R, (OG,IG,MG) (.01deg)
 Flightplan | V34E -> V34E - Terminate
 Flightplan | 00E -> 00E - LGC Idle
 Flightplan | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
@@ -58,19 +58,19 @@ P57 Align (REFSMMAT) 2CB | V32E (Recycle) -> V32E (Recycle) - Recycle
 P57 Align (REFSMMAT) 2CB | V32E (Recycle) -> V32E (Recycle) - Recycle
 P57 Align (REFSMMAT) 2CB | V32E (Recycle) -> V32E (Recycle) - Recycle
 P57 Align (REFSMMAT) 2CB | V32E (Recycle) -> V32E (Recycle) - Recycle
-P57 Align (REFSMMAT) 2CB | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-P57 Align (REFSMMAT) 2CB | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+P57 Align (REFSMMAT) 2CB | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+P57 Align (REFSMMAT) 2CB | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 P57 Align (REFSMMAT) 2CB | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 P57 Align (REFSMMAT) 2CB | 00E -> 00E - LGC Idle
 P57 Align (REFSMMAT) RM&G | V37E 57E -> V37E 57E - Change Program - Lunar Surface Align
 P57 Align (REFSMMAT) RM&G | V22E -> V22E - Load Component 2 in R2
 P57 Align (REFSMMAT) RM&G | V22E -> V22E - Load Component 2 in R2
-P57 Align (REFSMMAT) RM&G | V16 N20 Monitor Coarse Align -> V16 N20 Monitor Coarse Align - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
-P57 Align (REFSMMAT) RM&G | V16 N93 -> V16 N93 - Monitor Decimal - d Gyro Torquing Angles, R1=X, R2=Y, R3=Z (.001°)
+P57 Align (REFSMMAT) RM&G | V16 N20 Monitor Coarse Align -> V16 N20 Monitor Coarse Align - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
+P57 Align (REFSMMAT) RM&G | V16 N93 -> V16 N93 - Monitor Decimal - d Gyro Torquing Angles, R1=X, R2=Y, R3=Z (.001deg)
 P57 Align (REFSMMAT) RM&G | 00E -> 00E - LGC Idle
 DOI | V37E 40E -> V37E 40E - Change Program - DPS (Descent Propulsion System)
 DOI | V83E -> V83E - Rendezvous Parameter Display (R31)
-DOI | N20E -> N20E - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+DOI | N20E -> N20E - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 DOI | V40E -> V40E - Zero CDU’s (Specify N20 or N72)
 DOI | V06 N86E -> V06 N86E - Display Decimal - R1=dGX (LV) (+Fwd), R2=dGY (LV) (+Rt), R3=dGZ (LV) (+Dn) (.1fps)
 DOI | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
@@ -83,7 +83,7 @@ PDI | 00E -> 00E - LGC Idle
 PDI | V37E 63E -> V37E 63E - Change Program - Braking Phase
 PDI | N33E (TIG) -> N33E (TIG) - TIG (hrs min .01sec)
 PDI | V83E -> V83E - Rendezvous Parameter Display (R31)
-PDI | N20E -> N20E - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+PDI | N20E -> N20E - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 PDI | V40E -> V40E - Zero CDU’s (Specify N20 or N72)
 PDI | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
 PDI | V16 N68E -> V16 N68E - Monitor Decimal - R1=Slant Range to LS, R2=TF Braking, R3=LR Alt-Comp Alt (.1nm min-sec ft)
@@ -91,18 +91,18 @@ PDI | V57E -> V57E - Permit LR Update
 PDI | V16 N68E -> V16 N68E - Monitor Decimal - R1=Slant Range to LS, R2=TF Braking, R3=LR Alt-Comp Alt (.1nm min-sec ft)
 PDI | V37E 68E -> V37E 68E - Change Program - Landing Confirmation
 PDI | V37E 12E -> V37E 12E - Change Program - Powered Ascent
-PDI | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+PDI | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 PDI | V37E 00E -> V37E 00E - Change Program - LGC Idle
 Lunar Surface Operations | V37E 00E -> V37E 00E - Change Program - LGC Idle
 Lunar Surface Operations | V76E -> V76E - Set Min Impulse Mode in DAP
 Lunar Surface Operations | V37E 57E -> V37E 57E - Change Program - Lunar Surface Align
 Lunar Surface Operations | V22E -> V22E - Load Component 2 in R2
 Lunar Surface Operations | V22E -> V22E - Load Component 2 in R2
-Lunar Surface Operations | V16 N20 Monitor Coarse Align -> V16 N20 Monitor Coarse Align - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Lunar Surface Operations | V16 N20 Monitor Coarse Align -> V16 N20 Monitor Coarse Align - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Lunar Surface Operations | V32E -> V32E - Recycle
 Lunar Surface Operations | V34E -> V34E - Terminate
 Lunar Surface Operations | 00E -> 00E - LGC Idle
-Lunar Surface Operations | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Lunar Surface Operations | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Lunar Surface Operations | V37E 57E -> V37E 57E - Change Program - Lunar Surface Align
 Lunar Surface Operations | V22E -> V22E - Load Component 2 in R2
 Lunar Surface Operations | V22E -> V22E - Load Component 2 in R2
@@ -110,14 +110,14 @@ Lunar Surface Operations | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Surface Operations | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Surface Operations | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Surface Operations | V32E (Recycle) -> V32E (Recycle) - Recycle
-Lunar Surface Operations | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-Lunar Surface Operations | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+Lunar Surface Operations | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+Lunar Surface Operations | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 Lunar Surface Operations | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 Lunar Surface Operations | 00E -> 00E - LGC Idle
 Lunar Surface Operations | V37E 57E -> V37E 57E - Change Program - Lunar Surface Align
 Lunar Surface Operations | V22E -> V22E - Load Component 2 in R2
 Lunar Surface Operations | V22E -> V22E - Load Component 2 in R2
-Lunar Surface Operations | V16 N20 Monitor Gravity Measurement -> V16 N20 Monitor Gravity Measurement - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Lunar Surface Operations | V16 N20 Monitor Gravity Measurement -> V16 N20 Monitor Gravity Measurement - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Lunar Surface Operations | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Surface Operations | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Surface Operations | V34E -> V34E - Terminate
@@ -132,7 +132,7 @@ Lunar Surface Operations | V16 N65E -> V16 N65E - Monitor Decimal - (noun not fo
 Lunar Liftoff | V37E 57E -> V37E 57E - Change Program - Lunar Surface Align
 Lunar Liftoff | V22E -> V22E - Load Component 2 in R2
 Lunar Liftoff | V22E -> V22E - Load Component 2 in R2
-Lunar Liftoff | V16 N20 Monitor Coarse Align -> V16 N20 Monitor Coarse Align - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Lunar Liftoff | V16 N20 Monitor Coarse Align -> V16 N20 Monitor Coarse Align - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Lunar Liftoff | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Liftoff | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Liftoff | V34E -> V34E - Terminate
@@ -141,26 +141,26 @@ Lunar Liftoff | V25 N07E -> V25 N07E - Load Component 1&2&3 - Flag Word Operator
 Lunar Liftoff | 10E -> 10E - (program not found)
 Lunar Liftoff | V63E -> V63E - Start RR/LR Self-Test
 Lunar Liftoff | V34E -> V34E - Terminate
-Lunar Liftoff | V40 N72E -> V40 N72E - Zero CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+Lunar Liftoff | V40 N72E -> V40 N72E - Zero CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 Lunar Liftoff | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
 Lunar Liftoff | V15 N01E -> V15 N01E - Monitor Octal Comp 1,2&3 - Address to be Specified (Frac) (.XXXXX)
 Lunar Liftoff | 42E -> 42E - APS (Ascent Propulsion System)
 Lunar Liftoff | V76E -> V76E - Set Min Impulse Mode in DAP
 Lunar Liftoff | V11 N10E -> V11 N10E - Monitor Octal Comp 1 in R1 - Channel to be Specified (Octal)
 Lunar Liftoff | 31E -> 31E - Lambert Aim Point Guidance
-Lunar Liftoff | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-Lunar Liftoff | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+Lunar Liftoff | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+Lunar Liftoff | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 Lunar Liftoff | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 Lunar Liftoff | V37E 57E -> V37E 57E - Change Program - Lunar Surface Align
 Lunar Liftoff | V22E -> V22E - Load Component 2 in R2
 Lunar Liftoff | V22E -> V22E - Load Component 2 in R2
-Lunar Liftoff | V16 N20 Monitor Gravity Measurement -> V16 N20 Monitor Gravity Measurement - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Lunar Liftoff | V16 N20 Monitor Gravity Measurement -> V16 N20 Monitor Gravity Measurement - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Lunar Liftoff | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Liftoff | V32E (Recycle) -> V32E (Recycle) - Recycle
 Lunar Liftoff | V34E -> V34E - Terminate
 Lunar Liftoff | 00E -> 00E - LGC Idle
-Lunar Liftoff | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-Lunar Liftoff | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+Lunar Liftoff | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+Lunar Liftoff | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 Lunar Liftoff | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 Lunar Liftoff | V48E -> V48E - Load DAP Data (R03)
 Lunar Liftoff | V21E -> V21E - Load Component 1 in R1
@@ -175,8 +175,8 @@ Lunar Liftoff | 00E -> 00E - LGC Idle
 Rendezvous | V48E -> V48E - Load DAP Data (R03)
 Rendezvous | V21E -> V21E - Load Component 1 in R1
 Rendezvous | V34E -> V34E - Terminate
-Rendezvous | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-Rendezvous | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+Rendezvous | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+Rendezvous | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 Rendezvous | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 Rendezvous | V48E -> V48E - Load DAP Data (R03)
 Rendezvous | V21E -> V21E - Load Component 1 in R1
@@ -186,7 +186,7 @@ Rendezvous | V67E (Reset W Matrix) -> V67E (Reset W Matrix) - W-Matrix Monitor
 Rendezvous | V25E -> V25E - Load Component 1&2&3
 Rendezvous | V37E 20E -> V37E 20E - Change Program - Rendezvous Navigation
 Rendezvous | V80E -> V80E - Update LM State Vector
-Rendezvous | V16 N45E -> V16 N45E - Monitor Decimal - R1=Marks, R2=TFI Of Next/From Last Burn, R3=MGA (XXXXX. min-sec .01°)
+Rendezvous | V16 N45E -> V16 N45E - Monitor Decimal - R1=Marks, R2=TFI Of Next/From Last Burn, R3=MGA (XXXXX. min-sec .01deg)
 Rendezvous | V67E -> V67E - W-Matrix Monitor
 Rendezvous | 00E -> 00E - LGC Idle
 Rendezvous | V48E -> V48E - Load DAP Data (R03)
@@ -247,8 +247,8 @@ MCC2 | 41E -> 41E - RCS (Reaction Control System)
 MCC2 | V77E -> V77E - Set Rate Command/Attitude Hold Mode in DAP
 CSM Active Docking | V34E -> V34E - Terminate
 CSM Active Docking | V37E 00E -> V37E 00E - Change Program - LGC Idle
-CSM Active Docking | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-CSM Active Docking | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+CSM Active Docking | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+CSM Active Docking | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 CSM Active Docking | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 CSM Active Docking | V48E -> V48E - Load DAP Data (R03)
 CSM Active Docking | V21E -> V21E - Load Component 1 in R1
@@ -263,14 +263,14 @@ LGC Clock Sync & TEPHEM Update | V55E -> V55E - Increment LGC Time (Decimal)
 LGC Clock Sync & TEPHEM Update | V25 N01E -> V25 N01E - Load Component 1&2&3 - Address to be Specified (Frac) (.XXXXX)
 LGC Clock Sync & TEPHEM Update | V05 N01E -> V05 N01E - Display Octal Comp 1,2&3 - Address to be Specified (Frac) (.XXXXX)
 LGC Clock Sync & TEPHEM Update | V37E 00E -> V37E 00E - Change Program - LGC Idle
-RR Checkout | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-RR Checkout | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+RR Checkout | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+RR Checkout | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 RR Checkout | V83E -> V83E - Rendezvous Parameter Display (R31)
 RR Checkout | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 RR Checkout | V63E -> V63E - Start RR/LR Self-Test
 RR Checkout | V34E -> V34E - Terminate
-RR Checkout | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-RR Checkout | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+RR Checkout | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+RR Checkout | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 RR Checkout | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 RCS Checkout | V48E -> V48E - Load DAP Data (R03)
 RCS Checkout | V34E -> V34E - Terminate
@@ -299,15 +299,15 @@ RNDZ RDR Self Test | V25 N07E -> V25 N07E - Load Component 1&2&3 - Flag Word Ope
 RNDZ RDR Self Test | 10E -> 10E - (program not found)
 RNDZ RDR Self Test | V63E -> V63E - Start RR/LR Self-Test
 RNDZ RDR Self Test | V34E -> V34E - Terminate
-RNDZ RDR Self Test | V40 N72E -> V40 N72E - Zero CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-RNDZ RDR Self Test | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-RNDZ RDR Self Test | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+RNDZ RDR Self Test | V40 N72E -> V40 N72E - Zero CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+RNDZ RDR Self Test | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+RNDZ RDR Self Test | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 RNDZ RDR Self Test | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
-RNDZ RDR Self Test | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-RNDZ RDR Self Test | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+RNDZ RDR Self Test | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+RNDZ RDR Self Test | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 RNDZ RDR Self Test | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
-RNDZ RDR Self Test | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
-RNDZ RDR Self Test | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01°)
+RNDZ RDR Self Test | V41 N72E -> V41 N72E - Coarse Align CDU’s (Specify N20 or N72) - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
+RNDZ RDR Self Test | V16 N72E -> V16 N72E - Monitor Decimal - R1=RR Trunnion Angle, R2=RR Shaft Angle (.01deg)
 RNDZ RDR Self Test | V44E -> V44E - Terminate Continuous Designate (V41N72 Option 2)
 LDG RDR Self Test | V63E -> V63E - Start RR/LR Self-Test
 LDG RDR Self Test | V22E -> V22E - Load Component 2 in R2
@@ -320,8 +320,8 @@ AGS Initialization | V16 N65E -> V16 N65E - Monitor Decimal - (noun not found)
 AGS Initialization | V47E -> V47E - Initialize AGS (R47)
 AGS Initialization | V83E -> V83E - Rendezvous Parameter Display (R31)
 AGS Update | V47E -> V47E - Initialize AGS (R47)
-AGS Calibration | V16 N20E -> V16 N20E - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
-AGS Calibration | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+AGS Calibration | V16 N20E -> V16 N20E - Monitor Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
+AGS Calibration | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 P22 Lunar Surface Navigation | V37E 22E -> V37E 22E - Change Program - Lunar Surface Navigation
 P22 Lunar Surface Navigation | V95E -> V95E - Inhibit State Vector Update (P20 or P22)
 P22 Lunar Surface Navigation | V16 N78E -> V16 N78E - Monitor Decimal - R1=RR Range, R2=RR Range Rate (.01nm fps)
@@ -345,19 +345,19 @@ P41 RCS Thrusting | 00E -> 00E - LGC Idle
 P42 APS Thrusting | V37E 42E -> V37E 42E - Change Program - APS (Ascent Propulsion System)
 P42 APS Thrusting | V06 N86E -> V06 N86E - Display Decimal - R1=dGX (LV) (+Fwd), R2=dGY (LV) (+Rt), R3=dGZ (LV) (+Dn) (.1fps)
 P42 APS Thrusting | 00E -> 00E - LGC Idle
-Docked IMU Coarse Align | V41 N20E -> V41 N20E - Coarse Align CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
-Docked IMU Coarse Align | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Docked IMU Coarse Align | V41 N20E -> V41 N20E - Coarse Align CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
+Docked IMU Coarse Align | V40 N20E -> V40 N20E - Zero CDU’s (Specify N20 or N72) - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Docked IMU Coarse Align | V25 N07E -> V25 N07E - Load Component 1&2&3 - Flag Word Operator, R1=ECADR, R2=BIT ID, R3=Action (Octal)
 Docked IMU Coarse Align | 77E -> 77E - (program not found)
 Docked IMU Coarse Align | V01 N01E -> V01 N01E - Display Octal Comp 1 in R1 - Address to be Specified (Frac) (.XXXXX)
 Docked IMU Coarse Align | 77E -> 77E - (program not found)
 Docked IMU Coarse Align | V37E 51E -> V37E 51E - Change Program - IMU Orientation Determination
 Docked IMU Coarse Align | V37E 00E -> V37E 00E - Change Program - LGC Idle
-Docked IMU Coarse Align | V06 N20E -> V06 N20E - Display Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Docked IMU Coarse Align | V06 N20E -> V06 N20E - Display Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Docked IMU Coarse Align | V37E 00E -> V37E 00E - Change Program - LGC Idle
 Docked IMU Fine Align | V42E -> V42E - Fine Align IMU
-Docked IMU Fine Align | V16 N93E (Monitor Torquing) -> V16 N93E (Monitor Torquing) - Monitor Decimal - d Gyro Torquing Angles, R1=X, R2=Y, R3=Z (.001°)
-Docked IMU Fine Align | V06 N20E -> V06 N20E - Display Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01°)
+Docked IMU Fine Align | V16 N93E (Monitor Torquing) -> V16 N93E (Monitor Torquing) - Monitor Decimal - d Gyro Torquing Angles, R1=X, R2=Y, R3=Z (.001deg)
+Docked IMU Fine Align | V06 N20E -> V06 N20E - Display Decimal - ICDU Angles Y,P,R (OG,IG,MG) (.01deg)
 Docked IMU Fine Align | V37E 00E -> V37E 00E - Change Program - LGC Idle
 Initial Power Down | V37E 00E -> V37E 00E - Change Program - LGC Idle
 Initial Power Down | V37E 06E -> V37E 06E - Change Program - LGC Power Down
