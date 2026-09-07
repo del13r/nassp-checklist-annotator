@@ -64,8 +64,6 @@ DOI | 400+1 -> 400+1 - Auto Guidance Steering
 Flightplan | 400+2 -> 400+2 - Z-Body Axis Steering  
 DOI | 400+3 -> 400+3 - IMU Align
 
-One thing to be aware of is that where the source material uses the delta Δ character, the logs show a ?, however the XLS checklist is written with the correct delta character.
-
 How to run the scripts?  
 Open the CSM or LM dictionary file in excel first  
 CSM Verb and noun list.xlsx  
